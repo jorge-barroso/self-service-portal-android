@@ -2,41 +2,35 @@ package com.premfina.esig.selfserviceportal
 
 import android.os.Bundle
 import android.view.View
+import kotlinx.android.synthetic.main.activity_contact.*
 
 class ContactActivity : Drawer() {
 
     private var mainScreen = true
-    private lateinit var questionLayout: View
-    private lateinit var formLayout: View
-    private lateinit var agreementNumbers: View
-    private lateinit var agreementNumbersLabel: View
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         addToFrame(R.layout.activity_contact)
-        questionLayout = findViewById<View>(R.id.question_layout)
-        formLayout = findViewById<View>(R.id.form_layout)
-        agreementNumbers = findViewById<View>(R.id.agreement_numbers_view)
-        agreementNumbersLabel =findViewById<View>(R.id.ageement_numbers_label)
+        user_email_view.text = intent.getStringExtra("email")
     }
 
     fun yesClicked(view: View)
     {
         buttonPressed()
-        agreementNumbersLabel.visibility = View.VISIBLE
-        agreementNumbers.visibility = View.VISIBLE
+        ageement_numbers_label.visibility = View.VISIBLE
+        agreement_numbers_view.visibility = View.VISIBLE
     }
 
     fun noClicked(view: View)
     {
         buttonPressed()
-        agreementNumbersLabel.visibility = View.INVISIBLE
-        agreementNumbers.visibility = View.INVISIBLE
+        ageement_numbers_label.visibility = View.GONE
+        agreement_numbers_view.visibility = View.GONE
     }
 
     private fun buttonPressed(){
         mainScreen = false
-        questionLayout.visibility = View.INVISIBLE
-        formLayout.visibility = View.VISIBLE
+        question_layout.visibility = View.GONE
+        form_layout.visibility = View.VISIBLE
     }
 
     override fun onBackPressed() {
@@ -47,8 +41,8 @@ class ContactActivity : Drawer() {
     }
 
     private fun backToMainContactScreen() {
-        formLayout.visibility = View.INVISIBLE
-        questionLayout.visibility = View.VISIBLE
-        agreementNumbers.visibility = View.INVISIBLE
+        form_layout.visibility = View.GONE
+        question_layout.visibility = View.GONE
+        agreement_numbers_view.visibility = View.GONE
     }
 }

@@ -15,7 +15,7 @@
         <item name="android:fontFamily">sans-serif</item>
     </style>
 
-    <style name="NoDrawerTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+    <style name="ToolbarTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -27,16 +27,10 @@
         <item name="android:fontFamily">sans-serif</item>
     </style>
 
-    <style name="FullScreenTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:textColor">@color/font_gray</item>
-        <item name="buttonStyle">@style/Buttons</item>
-        <item name="cardViewStyle">@style/CardViews</item>
-        <item name="android:textViewStyle">@style/TextViews</item>
-        <item name="android:typeface">serif</item>
-        <item name="android:fontFamily">sans-serif</item>
+    <style name="FullScreenTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 
     <style name="Buttons" parent="Widget.AppCompat.Button">

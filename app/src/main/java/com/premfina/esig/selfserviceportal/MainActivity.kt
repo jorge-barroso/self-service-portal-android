@@ -2,14 +2,13 @@ package com.premfina.esig.selfserviceportal
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.constraint.ConstraintLayout
-import android.support.v7.widget.CardView
 import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.text.TextUtils
 import android.view.View
 import android.widget.*
 import com.premfina.selfservice.dto.DocumentDto
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.recycler_layout.view.*
 
 class MainActivity : Drawer() {
 
@@ -23,10 +22,8 @@ class MainActivity : Drawer() {
     private val documents2: ArrayList<DocumentDto> = arrayListOf(DocumentDto("", "Renewal Letter", "02/04/2018 14:36", ""))
     private val agreements: Array<String> = arrayOf("000000107", "000000108")
     private val allData: Map<String, ArrayList<DocumentDto>> = mapOf(agreements[0] to documents1, agreements[1] to documents2)
-    private lateinit var spinner: Spinner
     private var selectedDocumentsNames: ArrayList<DocumentDto> = ArrayList(0)
     private var currentAgreement: String = ""
-    private lateinit var includedView: ConstraintLayout
     //val CLASSNAME = this::class.simpleName
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,9 +37,8 @@ class MainActivity : Drawer() {
         val arrayAdapter = ArrayAdapter<String>(this@MainActivity, android.R.layout.simple_spinner_dropdown_item, android.R.id.text1)
         arrayAdapter.addAll(allData.keys)
 
-        spinner = findViewById(R.id.agreements_spinner)
-        spinner.adapter = arrayAdapter
-        spinner.onItemSelectedListener = object: AdapterView.OnItemSelectedListener {
+        agreements_spinner.adapter = arrayAdapter
+        agreements_spinner.onItemSelectedListener = object: AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(p0: AdapterView<*>?) {}
 
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
@@ -55,16 +51,15 @@ class MainActivity : Drawer() {
         }
 
         //RecyclerView
-        findViewById<RecyclerView>(R.id.documents_view).apply {
+        documents_view.apply {
             layoutManager = linearLayout
 
             adapter = recyclerAdapter
         }
 
         //Extra element to go to agreement details
-        includedView = findViewById(R.id.included_view)
-        includedView.isFocusable = false
-        val recyclerTextView: TextView = includedView.findViewById(R.id.recycler_text_view)
+        included_view.isFocusable = false
+        val recyclerTextView: TextView = included_view.recycler_text_view
         recyclerTextView.text = getString(R.string.agreement_details)
         //recyclerTextView.isClickable = true
         recyclerTextView.isFocusableInTouchMode = false

@@ -19,17 +19,10 @@ import java.util.*
 
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var submitButton: Button
-    private lateinit var email: EditText
-    private lateinit var password: EditText
     private lateinit var sharedPreferences: SharedPreferences
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-
-        submitButton = findViewById(R.id.login_submit_button)
-        email = findViewById(R.id.email)
-        password = findViewById(R.id.email)
 
         val properties = Properties()
         properties.load(assets.open("selfservice-portal.properties"))

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\jorba\\git\\self-service-portal-android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "C:\\Users\\Jorge Barroso\\git\\self-service-portal-android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jorba\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha3.aar\\970f7cca7bf7d705f8546f749fbeb2d7\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Jorge Barroso\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha3.aar\\09f059bd70916d4c0be9e87dccfc05ef\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\jorba\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-28.0.0-alpha3.aar\\39c26de4573ba9cfe48c9257db98961e\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Jorge Barroso\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-28.0.0-alpha3.aar\\8d9feebc8da87fa9d03bb58bccc4bee9\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

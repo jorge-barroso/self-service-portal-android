@@ -3,26 +3,18 @@ package com.premfina.esig.selfserviceportal
 import android.Manifest
 import android.app.DownloadManager
 import android.content.Context
-import android.content.Intent
 import android.content.pm.PackageManager
-import android.graphics.Color
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.os.Environment
-import android.support.customtabs.CustomTabsClient
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
-import android.widget.Button
-import android.widget.TextView
-import android.support.customtabs.CustomTabsIntent
-import android.support.customtabs.CustomTabsServiceConnection
 import kotlin.concurrent.thread
-import android.content.ComponentName
-import android.support.customtabs.CustomTabsCallback
+import kotlinx.android.synthetic.main.activity_document_details.*
 
 
 class DocumentDetailsActivity : Drawer() {
@@ -33,18 +25,18 @@ class DocumentDetailsActivity : Drawer() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         addToFrame(R.layout.activity_document_details)
+
         val intent = intent
-        val agreementNumberView = findViewById<TextView>(R.id.agreement_number)
         agreementNumber = intent.getStringExtra("agreement")
-        agreementNumberView.text = agreementNumber
         agreementUrl = intent.getStringExtra("agreement_url")
 
+        agreement_number_view.text = agreementNumber
         if(TextUtils.isEmpty(agreementUrl))
-            findViewById<Button>(R.id.download_button).isEnabled = false
+            download_button.isEnabled = false
         else
         {
             thread {
-                //tabsView = MyCustomTabsView(this, agreementUrl)
+                tabsView = MyCustomTabsView(this, agreementUrl)
             }
         }
     }

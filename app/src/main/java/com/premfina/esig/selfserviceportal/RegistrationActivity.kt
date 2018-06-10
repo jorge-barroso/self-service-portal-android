@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
-import android.widget.EditText
+import kotlinx.android.synthetic.main.activity_registration.*
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -15,20 +15,12 @@ class RegistrationActivity : AppCompatActivity() {
     private val ukPostCodeRegex: Regex = "^((([A-PR-UWYZ][0-9])|([A-PR-UWYZ][0-9][0-9])|([A-PR-UWYZ][A-HK-Y][0-9])|([A-PR-UWYZ][A-HK-Y][0-9][0-9])|([A-PR-UWYZ][0-9][A-HJKSTUW])|([A-PR-UWYZ][A-HK-Y][0-9][ABEHMNPRVWXY]))\\s?([0-9][ABD-HJLNP-UW-Z]{2})|(GIR)\\s?(0AA))\$".toRegex()
     private val df = SimpleDateFormat.getDateInstance()
     private val calendar = Calendar.getInstance()
-    private lateinit var surname: EditText
-    private lateinit var postcode: EditText
-    private lateinit var agreementNumber: EditText
-    private lateinit var dob: EditText
     private lateinit var dateSetListener: DatePickerDialog.OnDateSetListener
     private lateinit var datePicker: DatePickerDialog
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration)
-        surname = findViewById(R.id.agreement_number)
-        postcode = findViewById(R.id.surname)
-        agreementNumber = findViewById(R.id.agreement_number)
-        dob = findViewById(R.id.dob)
 
         dateSetListener = DatePickerDialog.OnDateSetListener { _, year, month, day ->
             calendar.set(year, month, day)
@@ -53,7 +45,7 @@ class RegistrationActivity : AppCompatActivity() {
             postcode.error = getString(R.string.invalid_postode)
 
         //TODO implement all the validations present on web frontend
-        for(element in arrayOf(surname, postcode, agreementNumber, dob))
+        for(element in arrayOf(surname, postcode, agreement_number_view, dob))
         {
             if(TextUtils.isEmpty(element.text))
                 element.error = getString(R.string.mandatory_field)
