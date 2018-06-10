@@ -1,0 +1,1 @@
+include ':app', ':self-service-dto-1.2.2'

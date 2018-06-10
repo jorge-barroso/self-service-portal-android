@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Selfservice Portal</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="introduce_login">Introduce tus detalles para iniciar sesión</string>
+    <string name="register">Regístrate</string>
+    <string name="registration">Registro</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="submit">Enviar</string>
+    <string name="not_registered_question">No estás registrado?</string>
+    <string name="something_went_wrong">Ha ocurrido un error, por favor inténtalo más tarde o contacta a atención al cliente</string>
+    <string name="wrong_credentials">El correo electrónico o la contraseña son incorrector, por favor, inténtalo de nuevo</string>
+    <string name="title_activity_main">Actividad Principal</string>
+    <string name="surname">Apellidos</string>
+    <string name="postcode">Código Postal</string>
+    <string name="agreement_number">Número de Acuerdo</string>
+    <string name="dob">Fecha de Nacimiento</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="navigation_drawer_open">Abrir menú de navegación</string>
+    <string name="navigation_drawer_close">Cerrar menú de navegación</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="home">Principal</string>
+    <string name="email_support">Enviar correo a atención al cliente</string>
+    <string name="call_support">Llamar a atencion al cliente</string>
+    <string name="title_activity_contact">Contacto</string>
+    <string name="other">Otros</string>
+    <string name="mandatory_field">Este campo es obligatorio</string>
+    <string name="invalid_postode">Por favor inserta un código postal válido</string>
+    <string name="about">Acerca de</string>
+    <string name="contact_question_desc1">Si tienes cualquier tipo de consulta relacionada con tus acuerdos, o cualquier otra cosa con la que podamos ayudarte, por favor sigue las instrucciones a continuación</string>
+    <string name="contact_question_desc2">Alternativamente, puedes llamar a nuestro servicio de atención al cliente desde el menú. Las llamadas se cobrarán al precio estándar de tu proveedor</string>
+    <string name="contact_question_main">Está tu consulta relacionada con algún acuerdo?</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="agreement_numbers">Números de Acuerdo</string>
+    <string name="subject">Tema</string>
+    <string name="query">Consulta</string>
+    <string name="select_agreements">Selecciona algún acuerdo</string>
+    <string name="home_desc">Selecciona un acuerdo para acceder a sus documentos y ver datos relacionados</string>
+    <string name="view">Ver</string>
+    <string name="download">Descargar</string>
+    <string name="premium">Prima</string>
+    <string name="agreement_details">Detalles del acuerdo</string>
+    <string name="background_description">Imagen de fondo, una fotografía del mar con una isla a un lado durante el atardecer</string>
+</resources>

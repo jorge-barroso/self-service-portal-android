@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">About</string>
+    <string name="agreement_details">Agreement Details</string>
+    <string name="agreement_number">Agreement Number</string>
+    <string name="agreement_numbers">Agreement Numbers</string>
+    <string name="app_name">Selfservice Portal</string>
+    <string name="background_description">Background image, featuring a picture of the sea with an island on one side, during the sunset</string>
+    <string name="call_support">Call Support</string>
+    <string name="contact_question_desc1">If you have any queries relating to your Agreement(s), or anything else we can help you with then please follow the instructions below.</string>
+    <string name="contact_question_desc2">Alternatively, you can call our customer service from the navigation menu. Calls will be charged at your standard supplier rate.</string>
+    <string name="contact_question_main">Is your query related to one or more agreements?</string>
+    <string name="dob">Date of Birth</string>
+    <string name="download">Download</string>
+    <string name="email">Email</string>
+    <string name="email_support">Email Support</string>
+    <string name="home">Home</string>
+    <string name="home_desc">Select an agreement to access your documents and view their related data</string>
+    <string name="introduce_login">Introduce Your Login Details</string>
+    <string name="invalid_postode">Please insert a valid UK postcode</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="mandatory_field">This field is mandatory</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="navigation_drawer_close">Close navigation</string>
+    <string name="navigation_drawer_open">Open navigation</string>
+    <string name="no">No</string>
+    <string name="not_registered_question">Not registered?</string>
+    <string name="other">Other</string>
+    <string name="password">Password</string>
+    <string name="postcode">Post Code</string>
+    <string name="premium">Premium</string>
+    <string name="query">Query</string>
+    <string name="register">Register</string>
+    <string name="registration">Registration</string>
+    <string name="select_agreements">Select Agreements</string>
+    <string name="something_went_wrong">Something went wrong, please try again later or contact client services</string>
+    <string name="subject">Subject</string>
+    <string name="submit">Submit</string>
+    <string name="surname">Surname</string>
+    <string name="title_activity_contact">Contact</string>
+    <string name="title_activity_main">Main Activity</string>
+    <string name="view">View</string>
+    <string name="wrong_credentials">Email or Password are invalid, please retry.</string>
+    <string name="yes">Yes</string>
+</resources>
