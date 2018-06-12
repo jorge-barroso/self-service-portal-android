@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Jun 11 12:51:56 BST 2018
+#Mon Jun 11 17:42:26 BST 2018
 1.base=C\:\\Users\\Jorge Barroso\\git\\self-service-portal-android\\app\\build\\intermediates\\assets\\debug
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY

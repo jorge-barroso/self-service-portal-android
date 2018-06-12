@@ -19,10 +19,10 @@ class MyCustomTabsView(ctx: Context, url: String, otherUrls: ArrayList<String> =
     private var ready: Boolean = false
     init{
         val bundles = ArrayList<Bundle>(otherUrls.size)
-        for(otherUrls in otherUrls)
+        for(otherUrl in otherUrls)
         {
             val newBundle = Bundle()
-            newBundle.putParcelable(CustomTabsService.KEY_URL, Uri.parse(otherUrls))
+            newBundle.putParcelable(CustomTabsService.KEY_URL, Uri.parse(otherUrl))
             bundles.add(newBundle)
         }
 
@@ -51,7 +51,7 @@ class MyCustomTabsView(ctx: Context, url: String, otherUrls: ArrayList<String> =
     }
 
     fun show(url: Uri = defaultUrl) {
-        customTabsIntent.launchUrl(ctx, defaultUrl)
+        customTabsIntent.launchUrl(ctx, url)
     }
 
     fun isReady() : Boolean {

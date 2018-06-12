@@ -43,4 +43,7 @@
     <string name="premium">Premium</string>
     <string name="agreement_details">Agreement Details</string>
     <string name="background_description">Background image, featuring a picture of the sea with an island on one side, during the sunset</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="use_external_browser">Open links with external browser</string>
+    <string name="night_mode">Use night mode</string>
 </resources>

@@ -80,7 +80,7 @@ open class Drawer : AppCompatActivity(), NavigationView.OnNavigationItemSelected
                 finish()
             }
             R.id.nav_settings -> {
-                startActivity(Intent(this, SettingsActivity::class.java))
+                //startActivity(Intent(this, SettingsActivity::class.java))
             }
         }
 

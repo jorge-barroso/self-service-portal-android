@@ -44,10 +44,6 @@
         <activity
             android:name="com.premfina.esig.selfserviceportal.DocumentDetailsActivity"
             android:label="@string/agreement_details" />
-        <activity
-            android:name="com.premfina.esig.selfserviceportal.SettingsActivity"
-            android:label="@string/title_activity_settings"
-            android:theme="@style/ToolbarTheme" />
     </application>
 
 </manifest>

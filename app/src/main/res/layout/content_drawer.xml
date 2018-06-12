@@ -9,4 +9,8 @@
     tools:context=".Drawer"
     tools:showIn="@layout/app_bar_drawer">
 
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/background_frame" />
 </FrameLayout>

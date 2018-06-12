@@ -43,4 +43,7 @@
     <string name="premium">Prima</string>
     <string name="agreement_details">Detalles del acuerdo</string>
     <string name="background_description">Imagen de fondo, una fotografía del mar con una isla a un lado durante el atardecer</string>
+    <string name="title_activity_settings">Ajustes</string>
+    <string name="use_external_browser">Abrir enlaces en un navegador externo</string>
+    <string name="night_mode">Modo nocturno</string>
 </resources>

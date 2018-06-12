@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <include layout="@layout/background_frame" />
-
     <TextView
         android:id="@+id/textView"
         style="@style/TextViews.Head"

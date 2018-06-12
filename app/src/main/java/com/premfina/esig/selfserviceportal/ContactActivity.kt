@@ -42,7 +42,8 @@ class ContactActivity : Drawer() {
 
     private fun backToMainContactScreen() {
         form_layout.visibility = View.GONE
-        question_layout.visibility = View.GONE
         agreement_numbers_view.visibility = View.GONE
+        question_layout.visibility = View.VISIBLE
+        mainScreen = true
     }
 }
