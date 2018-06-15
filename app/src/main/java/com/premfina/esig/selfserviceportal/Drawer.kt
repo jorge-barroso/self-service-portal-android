@@ -12,7 +12,9 @@ import android.support.v7.app.AppCompatActivity
 import android.view.*
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_drawer.*
+import kotlinx.android.synthetic.main.activity_main.view.*
 import kotlinx.android.synthetic.main.app_bar_drawer.*
+import kotlinx.android.synthetic.main.app_bar_drawer.view.*
 import kotlinx.android.synthetic.main.content_drawer.*
 
 
@@ -22,14 +24,18 @@ open class Drawer : AppCompatActivity(), NavigationView.OnNavigationItemSelected
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drawer)
+
+        sharedPreferences = getSharedPreferences("User", Context.MODE_PRIVATE)
+
+        toolbar.label_text.text = sharedPreferences.getString("username", "")
         setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
 
         /*fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }*/
 
-        sharedPreferences = getSharedPreferences("User", Context.MODE_PRIVATE)
         if(!sharedPreferences.contains("username"))
         {
             startActivity(Intent(this, LoginActivity::class.java))
@@ -50,11 +56,29 @@ open class Drawer : AppCompatActivity(), NavigationView.OnNavigationItemSelected
         nav_view.setNavigationItemSelectedListener(this)
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu, menu)
+        return true
+    }
+
     override fun onBackPressed() {
         if (drawer_layout.isDrawerOpen(GravityCompat.START)) {
             drawer_layout.closeDrawer(GravityCompat.START)
         } else {
             super.onBackPressed()
+        }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        return when(item?.itemId)
+        {
+            R.id.add_button -> {
+                startActivity(Intent(this, AddAgreementActivity::class.java))
+                true
+            }
+            else -> {
+                false
+            }
         }
     }
 
@@ -74,13 +98,16 @@ open class Drawer : AppCompatActivity(), NavigationView.OnNavigationItemSelected
                 intent.data = Uri.parse("tel:07752319217")
                 startActivity(intent)
             }
+            R.id.nav_settings -> {
+                //startActivity(Intent(this, SettingsActivity::class.java))
+            }
+            R.id.nav_about -> {
+                startActivity(Intent(this, AboutActivity::class.java))
+            }
             R.id.nav_logout -> {
                 sharedPreferences.edit().clear().apply()
                 startActivity(Intent(this, LoginActivity::class.java))
                 finish()
-            }
-            R.id.nav_settings -> {
-                //startActivity(Intent(this, SettingsActivity::class.java))
             }
         }
 

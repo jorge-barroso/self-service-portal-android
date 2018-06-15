@@ -1,227 +1,241 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-40:12
-MERGED from [com.android.support:design:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha3.aar\52d8cb66ca1d0056cc71a3811340c38c\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:preference-v7:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\preference-v7-28.0.0-alpha3.aar\ef0fe889db313d80d479506cad7a6353\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-alpha3.aar\09f059bd70916d4c0be9e87dccfc05ef\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\eaaf34e38cb6caecefaf0d0baa0080cc\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-alpha3.aar\85831ddf908af0cd6d754bd923d62eb6\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-alpha3.aar\d90ab701819d7fcf33d7691e69a324c0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0-alpha3.aar\8d9feebc8da87fa9d03bb58bccc4bee9\AndroidManifest.xml:17:1-22:12
-MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.6.22] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-mobile-client-2.6.22.aar\19ecad899700b7b6cbcc11f2e1a25c6a\AndroidManifest.xml:2:1-6:12
-MERGED from [com.android.support:customtabs:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\customtabs-28.0.0-alpha3.aar\5d702d9c7b8e24556633f84011701de6\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-v4:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0-alpha3.aar\7afb5037724a71cc25ba9bfb24f8a293\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-alpha3.aar\df6e6b1bbcfbd442d526f27c2e30ba1e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0-alpha3.aar\4e39908e06060f4d505562e1747ab24a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0-alpha3.aar\1598ed7176ea59725364d759adc32b7c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0-alpha3.aar\3172695b200de8fd03c4eb960bdd5604\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\transition-28.0.0-alpha3.aar\4b7d6f5b049dd1856eb2ac75e6afe49b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0-alpha3.aar\67f2a6a6a641c4a0ef648aa55071635f\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\loader-28.0.0-alpha3.aar\10c6fd1992d553821fbcac30f4b035c9\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0-alpha3.aar\db8e94081342eea0c758f6a24150f201\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0-alpha3.aar\cac5c9d5eb8baadd5595d05ae1704c13\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0-alpha3.aar\a0e8f79e71000f9661f155182c7c204b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0-alpha3.aar\fb03eed8e179acf12546d98bab326207\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\customview-28.0.0-alpha3.aar\23f071f3b34b2c985f3de29c41824e9c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0-alpha3.aar\6a141d34f896a21f0d19f571eb4cad0c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0-alpha3.aar\f4522dfd093c7703d8e344de70adeb21\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-alpha3.aar\e4ef8d82903757109f53ab51032ba030\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:cursoradapter:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0-alpha3.aar\c578268da9aae0f64e46af0115634f6d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0-alpha3.aar\e75ce0729c1b99935ec1295cc332b406\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\a3d77dc261a9332cb7373f3139b7e48a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-alpha3.aar\d0fefe5ee34fdfe2734c44c2ecf844d6\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:documentfile:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0-alpha3.aar\e96165d5c00ed769b07f10ebbfdbca9d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0-alpha3.aar\092ca6f9c3119ceed47510cec6810c7b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\print-28.0.0-alpha3.aar\ff54502549bae6cc562b8a71aa3252b4\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\bc98e9ff1489b25d944e6a0cd6514ac1\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\79336f1a0fa7484a9141300580c8b379\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\0e9c09a88bd7c943ed8cfa046986bc8a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.amazonaws:aws-android-sdk-auth-core:2.6.22] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-auth-core-2.6.22.aar\d9e256a375d58eeaf9204f5c5f824186\AndroidManifest.xml:2:1-4:80
-INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-40:12
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-44:12
+MERGED from [com.android.support:design:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha3.aar\b2bd549862bfd4d4f00379244b9e859a\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:preference-v7:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\preference-v7-28.0.0-alpha3.aar\7222f7881b1b72636451727d4d343bf2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-alpha3.aar\5c78ef6fc74e563185d0bdd7a5ed61c4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\95a19829f7a1a09e08110a460a4b9cd7\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-alpha3.aar\965c48394b22f38575c5c118ab582d91\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-alpha3.aar\23ff873975cd6041b649fe7ed04c2603\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0-alpha3.aar\8113667d0eed6093ef92de8f42d7a98e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.6.22] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-mobile-client-2.6.22.aar\f6dcb9bc03953040531185278df32a27\AndroidManifest.xml:2:1-6:12
+MERGED from [com.android.support:customtabs:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\customtabs-28.0.0-alpha3.aar\0c665ea38934985150c33c6fece1a50e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0-alpha3.aar\54c8e1e21cc6aa7c2f1e76c0be8b9fb8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-alpha3.aar\389f1668ba38c5d82fce9ad1371482c4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0-alpha3.aar\1aa139b3cf65ee98334dc54a8456c1eb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0-alpha3.aar\509c360874db7e9bbef214cd77a9e512\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0-alpha3.aar\89501a9581faf014100651d21e41dfa3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\transition-28.0.0-alpha3.aar\afd00a9dbfb11ad4983aaeb8db1cc7d1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0-alpha3.aar\bb35591d95e6e602ca72c42363969e76\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\loader-28.0.0-alpha3.aar\d1fc22a0af4ded258f2f2f868c04e21d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0-alpha3.aar\4bac9353c9cbb893bc8f0bfad0e5901d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0-alpha3.aar\1cdc90761c0568e04875df907ad76af1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0-alpha3.aar\e19b3bb6dfbd38ef827beb60eec68bf9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0-alpha3.aar\3858c92c59cce3296f85d8b463379ee5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\customview-28.0.0-alpha3.aar\48ee514f6a4db798c27e0402900b77d8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0-alpha3.aar\6e10299f283d90ff7b6d86a8c0de4328\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0-alpha3.aar\d222eb27ea5a2de0669217785d4f69f7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-alpha3.aar\ff35fc56628dc3c6595994314bf4029f\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:cursoradapter:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0-alpha3.aar\e85c4357336dc2b6a1eea341452a0d4a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0-alpha3.aar\45cfb60b0c188c498ab1170a252132bd\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\c7125d2ecb0896939c9b22f490214929\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-alpha3.aar\ef39032f5087730661462d423a6c4b78\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:documentfile:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0-alpha3.aar\43ac7143dd89161b1ce5960740ec8a05\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0-alpha3.aar\b670b4695abb81bbe833c91604f6996e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\print-28.0.0-alpha3.aar\725c91ce2512318cc727e8c0da64002c\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\2b579ed5d8d70efafed0789a5dde25f2\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\1eb6238782aa2bca94bcc1b1f7bd29b2\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\452740e6fea540bec35f77191eadfbdd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.amazonaws:aws-android-sdk-auth-core:2.6.22] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-auth-core-2.6.22.aar\3a8cc5638dcb88c27abc90e8860968ea\AndroidManifest.xml:2:1-4:80
+INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-44:12
 	package
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:3:5-50
-		INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:3:5-50
+		INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-40:12
-		INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-44:12
+		INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-40:12
-		INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-44:12
+		INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:6:5-79
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:6:22-76
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:6:22-76
 uses-permission#android.permission.CALL_PHONE
-ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:7:5-69
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:7:5-69
 	android:name
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:7:22-66
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:7:22-66
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:8:5-81
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:8:5-81
 	android:name
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:8:22-78
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:8:22-78
 application
-ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:10:5-38:19
-MERGED from [com.android.support:design:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha3.aar\52d8cb66ca1d0056cc71a3811340c38c\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha3.aar\52d8cb66ca1d0056cc71a3811340c38c\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\eaaf34e38cb6caecefaf0d0baa0080cc\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\eaaf34e38cb6caecefaf0d0baa0080cc\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:support-compat:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-alpha3.aar\e4ef8d82903757109f53ab51032ba030\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-alpha3.aar\e4ef8d82903757109f53ab51032ba030\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-alpha3.aar\d0fefe5ee34fdfe2734c44c2ecf844d6\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-alpha3.aar\d0fefe5ee34fdfe2734c44c2ecf844d6\AndroidManifest.xml:22:5-23:19
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:10:5-42:19
+MERGED from [com.android.support:design:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha3.aar\b2bd549862bfd4d4f00379244b9e859a\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha3.aar\b2bd549862bfd4d4f00379244b9e859a\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\95a19829f7a1a09e08110a460a4b9cd7\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\95a19829f7a1a09e08110a460a4b9cd7\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-alpha3.aar\ff35fc56628dc3c6595994314bf4029f\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-alpha3.aar\ff35fc56628dc3c6595994314bf4029f\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-alpha3.aar\ef39032f5087730661462d423a6c4b78\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-alpha3.aar\ef39032f5087730661462d423a6c4b78\AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-alpha3.aar\e4ef8d82903757109f53ab51032ba030\AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-alpha3.aar\ff35fc56628dc3c6595994314bf4029f\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:13:9-41
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:13:9-41
 	android:roundIcon
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:14:9-56
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:14:9-56
 	android:icon
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:12:9-45
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:12:9-51
 	android:allowBackup
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:16:9-40
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:16:9-40
 activity#com.premfina.esig.selfserviceportal.LoginActivity
-ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:17:9-20:54
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:17:9-20:54
 	android:label
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:19:13-42
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:19:13-42
 	android:theme
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:20:13-51
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:20:13-51
 	android:name
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:18:13-42
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:18:13-42
 activity#com.premfina.esig.selfserviceportal.RegistrationActivity
-ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:21:9-24:54
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:21:9-24:54
 	android:label
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:23:13-49
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:23:13-49
 	android:theme
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:24:13-51
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:24:13-51
 	android:name
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:22:13-49
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:22:13-49
 activity#com.premfina.esig.selfserviceportal.MainActivity
-ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:25:9-33:20
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:25:9-33:20
 	android:label
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:27:13-41
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:27:13-41
 	android:name
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:26:13-41
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:26:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:28:13-32:29
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:29:17-69
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:29:25-66
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:31:17-77
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:31:27-74
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:31:27-74
 activity#com.premfina.esig.selfserviceportal.ContactActivity
-ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:34:9-53
-	android:name
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:34:19-50
-activity#com.premfina.esig.selfserviceportal.DocumentDetailsActivity
-ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:35:9-37:57
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:34:9-36:62
 	android:label
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:37:13-54
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:36:13-59
 	android:name
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml:36:13-52
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:35:13-44
+activity#com.premfina.esig.selfserviceportal.DocumentDetailsActivity
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:37:9-39:57
+	android:label
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:39:13-54
+	android:name
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:38:13-52
+activity#com.premfina.esig.selfserviceportal.AddAgreementActivity
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:40:9-58
+	android:name
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:40:19-55
+activity#com.premfina.esig.selfserviceportal.AboutActivity
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:41:9-111
+	android:label
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:41:49-70
+	android:theme
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:41:71-99
+	android:name
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:41:19-48
 uses-sdk
-INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:design:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha3.aar\52d8cb66ca1d0056cc71a3811340c38c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha3.aar\52d8cb66ca1d0056cc71a3811340c38c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:preference-v7:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\preference-v7-28.0.0-alpha3.aar\ef0fe889db313d80d479506cad7a6353\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:preference-v7:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\preference-v7-28.0.0-alpha3.aar\ef0fe889db313d80d479506cad7a6353\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-alpha3.aar\09f059bd70916d4c0be9e87dccfc05ef\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-alpha3.aar\09f059bd70916d4c0be9e87dccfc05ef\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\eaaf34e38cb6caecefaf0d0baa0080cc\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\eaaf34e38cb6caecefaf0d0baa0080cc\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-alpha3.aar\85831ddf908af0cd6d754bd923d62eb6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-alpha3.aar\85831ddf908af0cd6d754bd923d62eb6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-alpha3.aar\d90ab701819d7fcf33d7691e69a324c0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-alpha3.aar\d90ab701819d7fcf33d7691e69a324c0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0-alpha3.aar\8d9feebc8da87fa9d03bb58bccc4bee9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0-alpha3.aar\8d9feebc8da87fa9d03bb58bccc4bee9\AndroidManifest.xml:20:5-44
-MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.6.22] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-mobile-client-2.6.22.aar\19ecad899700b7b6cbcc11f2e1a25c6a\AndroidManifest.xml:4:5-73
-MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.6.22] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-mobile-client-2.6.22.aar\19ecad899700b7b6cbcc11f2e1a25c6a\AndroidManifest.xml:4:5-73
-MERGED from [com.android.support:customtabs:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\customtabs-28.0.0-alpha3.aar\5d702d9c7b8e24556633f84011701de6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customtabs:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\customtabs-28.0.0-alpha3.aar\5d702d9c7b8e24556633f84011701de6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0-alpha3.aar\7afb5037724a71cc25ba9bfb24f8a293\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0-alpha3.aar\7afb5037724a71cc25ba9bfb24f8a293\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-alpha3.aar\df6e6b1bbcfbd442d526f27c2e30ba1e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-alpha3.aar\df6e6b1bbcfbd442d526f27c2e30ba1e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0-alpha3.aar\4e39908e06060f4d505562e1747ab24a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0-alpha3.aar\4e39908e06060f4d505562e1747ab24a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0-alpha3.aar\1598ed7176ea59725364d759adc32b7c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0-alpha3.aar\1598ed7176ea59725364d759adc32b7c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0-alpha3.aar\3172695b200de8fd03c4eb960bdd5604\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0-alpha3.aar\3172695b200de8fd03c4eb960bdd5604\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\transition-28.0.0-alpha3.aar\4b7d6f5b049dd1856eb2ac75e6afe49b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\transition-28.0.0-alpha3.aar\4b7d6f5b049dd1856eb2ac75e6afe49b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0-alpha3.aar\67f2a6a6a641c4a0ef648aa55071635f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0-alpha3.aar\67f2a6a6a641c4a0ef648aa55071635f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\loader-28.0.0-alpha3.aar\10c6fd1992d553821fbcac30f4b035c9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\loader-28.0.0-alpha3.aar\10c6fd1992d553821fbcac30f4b035c9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0-alpha3.aar\db8e94081342eea0c758f6a24150f201\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0-alpha3.aar\db8e94081342eea0c758f6a24150f201\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0-alpha3.aar\cac5c9d5eb8baadd5595d05ae1704c13\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0-alpha3.aar\cac5c9d5eb8baadd5595d05ae1704c13\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0-alpha3.aar\a0e8f79e71000f9661f155182c7c204b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0-alpha3.aar\a0e8f79e71000f9661f155182c7c204b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0-alpha3.aar\fb03eed8e179acf12546d98bab326207\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0-alpha3.aar\fb03eed8e179acf12546d98bab326207\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\customview-28.0.0-alpha3.aar\23f071f3b34b2c985f3de29c41824e9c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\customview-28.0.0-alpha3.aar\23f071f3b34b2c985f3de29c41824e9c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0-alpha3.aar\6a141d34f896a21f0d19f571eb4cad0c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0-alpha3.aar\6a141d34f896a21f0d19f571eb4cad0c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0-alpha3.aar\f4522dfd093c7703d8e344de70adeb21\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0-alpha3.aar\f4522dfd093c7703d8e344de70adeb21\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-alpha3.aar\e4ef8d82903757109f53ab51032ba030\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-alpha3.aar\e4ef8d82903757109f53ab51032ba030\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0-alpha3.aar\c578268da9aae0f64e46af0115634f6d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0-alpha3.aar\c578268da9aae0f64e46af0115634f6d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0-alpha3.aar\e75ce0729c1b99935ec1295cc332b406\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0-alpha3.aar\e75ce0729c1b99935ec1295cc332b406\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\a3d77dc261a9332cb7373f3139b7e48a\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\a3d77dc261a9332cb7373f3139b7e48a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-alpha3.aar\d0fefe5ee34fdfe2734c44c2ecf844d6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-alpha3.aar\d0fefe5ee34fdfe2734c44c2ecf844d6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0-alpha3.aar\e96165d5c00ed769b07f10ebbfdbca9d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0-alpha3.aar\e96165d5c00ed769b07f10ebbfdbca9d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0-alpha3.aar\092ca6f9c3119ceed47510cec6810c7b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0-alpha3.aar\092ca6f9c3119ceed47510cec6810c7b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\print-28.0.0-alpha3.aar\ff54502549bae6cc562b8a71aa3252b4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0-alpha3] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\print-28.0.0-alpha3.aar\ff54502549bae6cc562b8a71aa3252b4\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\bc98e9ff1489b25d944e6a0cd6514ac1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\bc98e9ff1489b25d944e6a0cd6514ac1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\79336f1a0fa7484a9141300580c8b379\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\79336f1a0fa7484a9141300580c8b379\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\0e9c09a88bd7c943ed8cfa046986bc8a\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\0e9c09a88bd7c943ed8cfa046986bc8a\AndroidManifest.xml:20:5-44
-MERGED from [com.amazonaws:aws-android-sdk-auth-core:2.6.22] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-auth-core-2.6.22.aar\d9e256a375d58eeaf9204f5c5f824186\AndroidManifest.xml:4:1-69
-MERGED from [com.amazonaws:aws-android-sdk-auth-core:2.6.22] C:\Users\Jorge Barroso\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-auth-core-2.6.22.aar\d9e256a375d58eeaf9204f5c5f824186\AndroidManifest.xml:4:1-69
-INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha3.aar\b2bd549862bfd4d4f00379244b9e859a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha3.aar\b2bd549862bfd4d4f00379244b9e859a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:preference-v7:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\preference-v7-28.0.0-alpha3.aar\7222f7881b1b72636451727d4d343bf2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:preference-v7:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\preference-v7-28.0.0-alpha3.aar\7222f7881b1b72636451727d4d343bf2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-alpha3.aar\5c78ef6fc74e563185d0bdd7a5ed61c4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-alpha3.aar\5c78ef6fc74e563185d0bdd7a5ed61c4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\95a19829f7a1a09e08110a460a4b9cd7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\95a19829f7a1a09e08110a460a4b9cd7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-alpha3.aar\965c48394b22f38575c5c118ab582d91\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-alpha3.aar\965c48394b22f38575c5c118ab582d91\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-alpha3.aar\23ff873975cd6041b649fe7ed04c2603\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-alpha3.aar\23ff873975cd6041b649fe7ed04c2603\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0-alpha3.aar\8113667d0eed6093ef92de8f42d7a98e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0-alpha3.aar\8113667d0eed6093ef92de8f42d7a98e\AndroidManifest.xml:20:5-44
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.6.22] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-mobile-client-2.6.22.aar\f6dcb9bc03953040531185278df32a27\AndroidManifest.xml:4:5-73
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.6.22] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-mobile-client-2.6.22.aar\f6dcb9bc03953040531185278df32a27\AndroidManifest.xml:4:5-73
+MERGED from [com.android.support:customtabs:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\customtabs-28.0.0-alpha3.aar\0c665ea38934985150c33c6fece1a50e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\customtabs-28.0.0-alpha3.aar\0c665ea38934985150c33c6fece1a50e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0-alpha3.aar\54c8e1e21cc6aa7c2f1e76c0be8b9fb8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0-alpha3.aar\54c8e1e21cc6aa7c2f1e76c0be8b9fb8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-alpha3.aar\389f1668ba38c5d82fce9ad1371482c4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-alpha3.aar\389f1668ba38c5d82fce9ad1371482c4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0-alpha3.aar\1aa139b3cf65ee98334dc54a8456c1eb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0-alpha3.aar\1aa139b3cf65ee98334dc54a8456c1eb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0-alpha3.aar\509c360874db7e9bbef214cd77a9e512\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0-alpha3.aar\509c360874db7e9bbef214cd77a9e512\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0-alpha3.aar\89501a9581faf014100651d21e41dfa3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0-alpha3.aar\89501a9581faf014100651d21e41dfa3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\transition-28.0.0-alpha3.aar\afd00a9dbfb11ad4983aaeb8db1cc7d1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\transition-28.0.0-alpha3.aar\afd00a9dbfb11ad4983aaeb8db1cc7d1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0-alpha3.aar\bb35591d95e6e602ca72c42363969e76\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0-alpha3.aar\bb35591d95e6e602ca72c42363969e76\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\loader-28.0.0-alpha3.aar\d1fc22a0af4ded258f2f2f868c04e21d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\loader-28.0.0-alpha3.aar\d1fc22a0af4ded258f2f2f868c04e21d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0-alpha3.aar\4bac9353c9cbb893bc8f0bfad0e5901d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0-alpha3.aar\4bac9353c9cbb893bc8f0bfad0e5901d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0-alpha3.aar\1cdc90761c0568e04875df907ad76af1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0-alpha3.aar\1cdc90761c0568e04875df907ad76af1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0-alpha3.aar\e19b3bb6dfbd38ef827beb60eec68bf9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0-alpha3.aar\e19b3bb6dfbd38ef827beb60eec68bf9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0-alpha3.aar\3858c92c59cce3296f85d8b463379ee5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0-alpha3.aar\3858c92c59cce3296f85d8b463379ee5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\customview-28.0.0-alpha3.aar\48ee514f6a4db798c27e0402900b77d8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\customview-28.0.0-alpha3.aar\48ee514f6a4db798c27e0402900b77d8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0-alpha3.aar\6e10299f283d90ff7b6d86a8c0de4328\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0-alpha3.aar\6e10299f283d90ff7b6d86a8c0de4328\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0-alpha3.aar\d222eb27ea5a2de0669217785d4f69f7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0-alpha3.aar\d222eb27ea5a2de0669217785d4f69f7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-alpha3.aar\ff35fc56628dc3c6595994314bf4029f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-alpha3.aar\ff35fc56628dc3c6595994314bf4029f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0-alpha3.aar\e85c4357336dc2b6a1eea341452a0d4a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0-alpha3.aar\e85c4357336dc2b6a1eea341452a0d4a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0-alpha3.aar\45cfb60b0c188c498ab1170a252132bd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0-alpha3.aar\45cfb60b0c188c498ab1170a252132bd\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\c7125d2ecb0896939c9b22f490214929\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\c7125d2ecb0896939c9b22f490214929\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-alpha3.aar\ef39032f5087730661462d423a6c4b78\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-alpha3.aar\ef39032f5087730661462d423a6c4b78\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0-alpha3.aar\43ac7143dd89161b1ce5960740ec8a05\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0-alpha3.aar\43ac7143dd89161b1ce5960740ec8a05\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0-alpha3.aar\b670b4695abb81bbe833c91604f6996e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0-alpha3.aar\b670b4695abb81bbe833c91604f6996e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\print-28.0.0-alpha3.aar\725c91ce2512318cc727e8c0da64002c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\print-28.0.0-alpha3.aar\725c91ce2512318cc727e8c0da64002c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\2b579ed5d8d70efafed0789a5dde25f2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\2b579ed5d8d70efafed0789a5dde25f2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\1eb6238782aa2bca94bcc1b1f7bd29b2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\1eb6238782aa2bca94bcc1b1f7bd29b2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\452740e6fea540bec35f77191eadfbdd\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\452740e6fea540bec35f77191eadfbdd\AndroidManifest.xml:20:5-44
+MERGED from [com.amazonaws:aws-android-sdk-auth-core:2.6.22] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-auth-core-2.6.22.aar\3a8cc5638dcb88c27abc90e8860968ea\AndroidManifest.xml:4:1-69
+MERGED from [com.amazonaws:aws-android-sdk-auth-core:2.6.22] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-auth-core-2.6.22.aar\3a8cc5638dcb88c27abc90e8860968ea\AndroidManifest.xml:4:1-69
+INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Jorge Barroso\git\self-service-portal-android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml

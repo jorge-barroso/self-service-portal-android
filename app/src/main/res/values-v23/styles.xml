@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="About" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionBarSize">45dp</item>
+        <item name="displayOptions">homeAsUp</item>
+        <item name="android:textViewStyle">@style/AboutTextViews</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+</resources>

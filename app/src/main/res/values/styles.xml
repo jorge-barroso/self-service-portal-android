@@ -2,9 +2,10 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
+        <item name="actionBarSize">45dp</item>
+        <item name="displayOptions">homeAsUp</item>
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColor">@color/font_gray</item>
         <item name="android:scaleType">centerCrop</item>
@@ -13,11 +14,12 @@
         <item name="android:textViewStyle">@style/TextViews</item>
         <item name="android:typeface">serif</item>
         <item name="android:fontFamily">sans-serif</item>
+        <item name="coordinatorLayoutStyle">@style/Widget.Support.CoordinatorLayout</item>
     </style>
 
     <style name="ToolbarTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColor">@color/font_gray</item>
         <item name="buttonStyle">@style/Buttons</item>
@@ -25,6 +27,16 @@
         <item name="android:textViewStyle">@style/TextViews</item>
         <item name="android:typeface">serif</item>
         <item name="android:fontFamily">sans-serif</item>
+        <item name="coordinatorLayoutStyle">@style/Widget.Support.CoordinatorLayout</item>
+    </style>
+
+    <style name="About" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionBarSize">45dp</item>
+        <item name="displayOptions">homeAsUp</item>
+        <item name="android:textViewStyle">@style/AboutTextViews</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
     </style>
 
     <style name="FullScreenTheme" parent="AppTheme">
@@ -41,7 +53,6 @@
     </style>
 
     <style name="CardViews" parent="CardView">
-        <item name="android:elevation">1dp</item>
         <item name="cardCornerRadius">20dp</item>
         <item name="android:innerRadius">0dp</item>
         <item name="android:shape">ring</item>
@@ -53,6 +64,11 @@
         <item name="android:textColor">@color/font_gray</item>
         <item name="android:background">@null</item>
     </style>
+    <style name="AboutTextViews" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@null</item>
+    </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -60,10 +76,8 @@
 
     <style name="TextViews.Head">
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_marginEnd">20dp</item>
         <item name="android:layout_marginLeft">20dp</item>
         <item name="android:layout_marginRight">20dp</item>
-        <item name="android:layout_marginStart">20dp</item>
     </style>
 
     <style name="Views">

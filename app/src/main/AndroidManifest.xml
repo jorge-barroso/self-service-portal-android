@@ -31,10 +31,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ContactActivity" />
+        <activity
+            android:name=".ContactActivity"
+            android:label="@string/title_activity_contact" />
         <activity
             android:name=".DocumentDetailsActivity"
             android:label="@string/agreement_details" />
+        <activity android:name=".AddAgreementActivity" />
+        <activity android:name=".AboutActivity" android:label="About" android:theme="@style/About"></activity>
     </application>
 
 </manifest>

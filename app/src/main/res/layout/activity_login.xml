@@ -8,8 +8,7 @@
 
     <include
         android:id="@+id/include"
-        layout="@layout/background_frame"
-        />
+        layout="@layout/background_frame" />
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardView2"

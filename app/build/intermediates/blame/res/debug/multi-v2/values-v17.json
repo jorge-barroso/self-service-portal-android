@@ -1,11 +1,35 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Jorge Barroso\\git\\self-service-portal-android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
+            "outputFile": "C:\\Users\\PFBARROSOJ\\git\\self-service-portal-android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Jorge Barroso\\.gradle\\caches\\transforms-1\\files-1.1\\preference-v7-28.0.0-alpha3.aar\\ef0fe889db313d80d479506cad7a6353\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\PFBARROSOJ\\git\\self-service-portal-android\\app\\src\\main\\res\\values-v17\\styles.xml",
                     "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "59",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "397"
+                    },
+                    "to": {
+                        "startLines": "74",
+                        "startColumns": "4",
+                        "startOffsets": "4099",
+                        "endLines": "80",
+                        "endColumns": "12",
+                        "endOffsets": "4431"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\PFBARROSOJ\\.gradle\\caches\\transforms-1\\files-1.1\\preference-v7-28.0.0-alpha3.aar\\7222f7881b1b72636451727d4d343bf2\\res\\values-v17\\values-v17.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1",
+                        "startColumns": "-1,-1,-1",
+                        "startOffsets": "-1,-1,-1"
+                    },
+                    "to": {
                         "startLines": "2,7,11",
                         "startColumns": "4,4,4",
                         "startOffsets": "55,280,441",
@@ -15,14 +39,11 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Jorge Barroso\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha3.aar\\09f059bd70916d4c0be9e87dccfc05ef\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\PFBARROSOJ\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha3.aar\\5c78ef6fc74e563185d0bdd7a5ed61c4\\res\\values-v17\\values-v17.xml",
                     "from": {
-                        "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,228,456,614,764,936,1161,1331,1559,1783,2025,2196,2370,2539,2812,3012,3216",
-                        "endLines": "4,8,11,14,17,21,24,28,32,36,39,42,45,49,52,56,60",
-                        "endColumns": "12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12",
-                        "endOffsets": "223,451,609,759,931,1156,1326,1554,1778,2020,2191,2365,2534,2807,3007,3211,3540"
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
                         "startLines": "15,18,22,25,28,31,35,38,42,46,50,53,56,59,63,66,70",

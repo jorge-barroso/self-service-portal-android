@@ -44,7 +44,8 @@
     <string name="download">Download</string>
     <string name="premium">Premium</string>
     <string name="agreement_details">Agreement Details</string>
-
+    <string name="add_agreement_desc">Use this section to add new agreements.\n\nJust type in your new agreement and we will add it to your list of agreements.\n\nYou may have to eSign it if it\'s not a renewal agreement.</string>
+    <string name="add">Add</string>
 
     <string name="background_description">Background image, featuring a picture of the sea with an island on one side, during the sunset</string>
     <string name="title_activity_settings">Settings</string>
@@ -53,4 +54,6 @@
     <string name="use_external_browser">Open links with external browser</string>
     <string name="night_mode">Use night mode</string>
 
+    <string name="fca_notice1">PremFina Limited is authorised and regulated by the Financial Conduct Authority (FCA).</string>
+    <string name="fca_notice2">It is legally advised by Clifford Chance LLP on commercial matters, Eversheds LLP on regulatory affairs and Kennedys LLP on insurance industry specifics; and audited by UHY Hacker Young LLP. </string>
 </resources>
