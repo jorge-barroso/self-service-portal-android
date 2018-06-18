@@ -896,6 +896,10 @@
         "source": "C:\\Users\\PFBARROSOJ\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0-alpha3.aar\\b2bd549862bfd4d4f00379244b9e859a\\res\\layout\\design_navigation_menu.xml"
     },
     {
+        "merged": "C:\\Users\\PFBARROSOJ\\git\\self-service-portal-android\\app\\build\\intermediates\\res\\merged\\debug\\xml_preferences.xml.flat",
+        "source": "C:\\Users\\PFBARROSOJ\\git\\self-service-portal-android\\app\\src\\main\\res\\xml\\preferences.xml"
+    },
+    {
         "merged": "C:\\Users\\PFBARROSOJ\\git\\self-service-portal-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "C:\\Users\\PFBARROSOJ\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha3.aar\\5c78ef6fc74e563185d0bdd7a5ed61c4\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
@@ -1742,6 +1746,10 @@
     {
         "merged": "C:\\Users\\PFBARROSOJ\\git\\self-service-portal-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\PFBARROSOJ\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha3.aar\\5c78ef6fc74e563185d0bdd7a5ed61c4\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\PFBARROSOJ\\git\\self-service-portal-android\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_settings.xml.flat",
+        "source": "C:\\Users\\PFBARROSOJ\\git\\self-service-portal-android\\app\\src\\main\\res\\layout\\activity_settings.xml"
     },
     {
         "merged": "C:\\Users\\PFBARROSOJ\\git\\self-service-portal-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_default_mtrl_shape.xml.flat",

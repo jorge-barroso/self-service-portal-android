@@ -7,87 +7,67 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/main_desc"
         style="@style/TextViews.Head"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:background="@color/premfina_gray"
         android:gravity="center"
         android:text="@string/home_desc"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/premfina_gray"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/constraintLayout2"
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/agreements_card"
         android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_height="40dp"
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/main_desc">
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/agreements_card"
+        <Spinner
+            android:id="@+id/agreements_spinner"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <Spinner
-                android:id="@+id/agreements_spinner"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </android.support.v7.widget.CardView>
+            android:layout_height="match_parent" />
+    </android.support.v7.widget.CardView>
 
 
-        <View
-            android:id="@+id/view"
-            style="@style/Views"
-            android:layout_width="wrap_content"
-            android:layout_height="1dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/documents_view"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/agreements_card" />
+    <View
+        android:id="@+id/view"
+        style="@style/Views"
+        android:layout_width="220dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/documents_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agreements_card" />
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/documents_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            app:layout_constraintEnd_toEndOf="@+id/agreements_card"
-            app:layout_constraintStart_toStartOf="@+id/agreements_card"
-            app:layout_constraintTop_toBottomOf="@+id/agreements_card">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/documents_view"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/agreements_card"
+        app:layout_constraintStart_toStartOf="@+id/agreements_card"
+        app:layout_constraintTop_toBottomOf="@+id/agreements_card">
 
-        </android.support.v7.widget.RecyclerView>
+    </android.support.v7.widget.RecyclerView>
 
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/documents_view">
-
-            <include
-                android:id="@+id/included_view"
-                layout="@layout/recycler_layout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </android.support.constraint.ConstraintLayout>
-    </android.support.constraint.ConstraintLayout>
+    <include
+        android:id="@+id/included_view"
+        layout="@layout/recycler_layout"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

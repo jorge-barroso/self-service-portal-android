@@ -2,6 +2,8 @@ package com.premfina.esig.selfserviceportal
 
 import android.content.Intent
 import android.os.Bundle
+import android.support.v4.content.ContextCompat
+import android.support.v7.preference.PreferenceManager
 import android.support.v7.widget.LinearLayoutManager
 import android.text.TextUtils
 import android.view.View
@@ -15,6 +17,7 @@ class MainActivity : Drawer() {
     /**
      * TODO implement functionality for multiple agreements:
      * - Store an Map<String, List<DocumentDto>> with agreement numbers as key, as we populate and add the cards and spinners
+     * - Store an Map<String, List<DocumentDto>> with agreement numbers as key, as we populate and add the cards and spinners
      * - Give the spinners an identification (don't remember property for this extra value) matching the index of the agreement the spinner is for
      * - By this we can get the exact document
      */
@@ -27,6 +30,11 @@ class MainActivity : Drawer() {
     //val CLASSNAME = this::class.simpleName
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val sharedPref = PreferenceManager.getDefaultSharedPreferences(this)
+        val switchPref = sharedPref.getBoolean(SettingsActivity.ownbrowserPreferenceKey, false)
+        Toast.makeText(this, switchPref.toString(), Toast.LENGTH_LONG).show()
+
         addToFrame(layoutResID = R.layout.activity_main)
 
         val linearLayout = LinearLayoutManager(this@MainActivity)
@@ -61,6 +69,8 @@ class MainActivity : Drawer() {
         included_view.isFocusable = false
         val recyclerTextView: TextView = included_view.recycler_text_view
         recyclerTextView.text = getString(R.string.agreement_details)
+        recyclerTextView.background = ContextCompat.getDrawable(this, R.color.colorPrimaryDark)
+        recyclerTextView.setTextColor(ContextCompat.getColor(this, android.R.color.white))
         //recyclerTextView.isClickable = true
         recyclerTextView.isFocusableInTouchMode = false
         recyclerTextView.setOnClickListener { moreDetails() }

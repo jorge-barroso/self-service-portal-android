@@ -38,7 +38,13 @@
             android:name=".DocumentDetailsActivity"
             android:label="@string/agreement_details" />
         <activity android:name=".AddAgreementActivity" />
-        <activity android:name=".AboutActivity" android:label="About" android:theme="@style/About"></activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="About"
+            android:theme="@style/About" />
+        <activity android:name=".SettingsActivity"
+                  android:label="@string/title_activity_settings"
+                  android:theme="@style/ToolbarTheme"></activity>
     </application>
 
 </manifest>

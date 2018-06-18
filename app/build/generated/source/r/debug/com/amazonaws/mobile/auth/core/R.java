@@ -12,11 +12,11 @@ public final class R {
         public static final int text = 0x7f03020f;
     }
     public static final class id {
-        public static final int large = 0x7f080087;
-        public static final int small = 0x7f0800e0;
+        public static final int large = 0x7f080085;
+        public static final int small = 0x7f0800df;
     }
     public static final class string {
-        public static final int sign_in_failure_message_format = 0x7f0e0060;
+        public static final int sign_in_failure_message_format = 0x7f0e0062;
     }
     public static final class styleable {
         public static final int[] SignInButton = { 0x7f030060, 0x7f03020f };

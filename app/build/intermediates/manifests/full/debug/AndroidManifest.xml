@@ -51,6 +51,15 @@
             android:name="com.premfina.esig.selfserviceportal.AboutActivity"
             android:label="About"
             android:theme="@style/About" />
+        <activity
+            android:name="com.premfina.esig.selfserviceportal.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.premfina.esig.selfserviceportal.MainActivity"
+            android:theme="@style/ToolbarTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>

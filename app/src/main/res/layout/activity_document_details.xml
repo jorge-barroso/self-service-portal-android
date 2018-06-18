@@ -58,10 +58,9 @@
             style="@style/ButtonBarStyle"
             android:layout_width="90dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginStart="40dp"
             android:layout_marginTop="20dp"
             android:text="@string/email"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view_button" />
 
@@ -144,17 +143,6 @@
             </android.support.constraint.ConstraintLayout>
         </android.support.v7.widget.CardView>
 
-        <Button
-            android:id="@+id/button6"
-            style="@style/ButtonBarStyle"
-            android:layout_width="90dp"
-            android:layout_height="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginTop="20dp"
-            android:text="Button"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/download_button" />
     </android.support.constraint.ConstraintLayout>
 
 </ScrollView>

@@ -28,6 +28,7 @@
         <item name="android:typeface">serif</item>
         <item name="android:fontFamily">sans-serif</item>
         <item name="coordinatorLayoutStyle">@style/Widget.Support.CoordinatorLayout</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
     </style>
 
     <style name="About" parent="Theme.AppCompat.Light.NoActionBar">
@@ -64,6 +65,7 @@
         <item name="android:textColor">@color/font_gray</item>
         <item name="android:background">@null</item>
     </style>
+
     <style name="AboutTextViews" parent="Widget.AppCompat.EditText">
         <item name="android:textColor">@android:color/white</item>
         <item name="android:background">@null</item>

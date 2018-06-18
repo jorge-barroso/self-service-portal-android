@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-44:12
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-55:12
 MERGED from [com.android.support:design:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha3.aar\b2bd549862bfd4d4f00379244b9e859a\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:preference-v7:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\preference-v7-28.0.0-alpha3.aar\7222f7881b1b72636451727d4d343bf2\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-alpha3.aar\5c78ef6fc74e563185d0bdd7a5ed61c4\AndroidManifest.xml:17:1-22:12
@@ -40,20 +40,20 @@ MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\PFBARROSOJ\.gradle
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\1eb6238782aa2bca94bcc1b1f7bd29b2\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\452740e6fea540bec35f77191eadfbdd\AndroidManifest.xml:17:1-22:12
 MERGED from [com.amazonaws:aws-android-sdk-auth-core:2.6.22] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\aws-android-sdk-auth-core-2.6.22.aar\3a8cc5638dcb88c27abc90e8860968ea\AndroidManifest.xml:2:1-4:80
-INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-55:12
 	package
 		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:3:5-50
 		INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-44:12
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-55:12
 		INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-44:12
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:1-55:12
 		INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:2:11-69
@@ -74,7 +74,7 @@ ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\Andr
 	android:name
 		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:8:22-78
 application
-ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:10:5-42:19
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:10:5-53:19
 MERGED from [com.android.support:design:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha3.aar\b2bd549862bfd4d4f00379244b9e859a\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0-alpha3] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha3.aar\b2bd549862bfd4d4f00379244b9e859a\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\PFBARROSOJ\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\95a19829f7a1a09e08110a460a4b9cd7\AndroidManifest.xml:9:5-20
@@ -146,13 +146,29 @@ ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\Andr
 	android:name
 		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:40:19-55
 activity#com.premfina.esig.selfserviceportal.AboutActivity
-ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:41:9-111
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:41:9-44:44
 	android:label
-		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:41:49-70
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:43:13-34
 	android:theme
-		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:41:71-99
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:44:13-41
 	android:name
-		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:41:19-48
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:42:13-42
+activity#com.premfina.esig.selfserviceportal.SettingsActivity
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:45:9-52:20
+	android:parentActivityName
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:48:13-55
+	android:label
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:46:19-66
+	android:theme
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:47:19-54
+	android:name
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:45:19-51
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:49:13-51:48
+	android:value
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:51:17-46
+	android:name
+		ADDED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml:50:17-63
 uses-sdk
 INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\PFBARROSOJ\git\self-service-portal-android\app\src\main\AndroidManifest.xml

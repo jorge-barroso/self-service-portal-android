@@ -9,10 +9,10 @@ import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.preference.PreferenceManager
 import android.view.*
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_drawer.*
-import kotlinx.android.synthetic.main.activity_main.view.*
 import kotlinx.android.synthetic.main.app_bar_drawer.*
 import kotlinx.android.synthetic.main.app_bar_drawer.view.*
 import kotlinx.android.synthetic.main.content_drawer.*
@@ -25,22 +25,19 @@ open class Drawer : AppCompatActivity(), NavigationView.OnNavigationItemSelected
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drawer)
 
-        sharedPreferences = getSharedPreferences("User", Context.MODE_PRIVATE)
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
+
+        if(!sharedPreferences.contains("username"))
+        {
+            PreferenceManager.setDefaultValues(this, R.xml.preferences, false)
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish()
+        }
 
         toolbar.label_text.text = sharedPreferences.getString("username", "")
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
 
-        /*fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        }*/
-
-        if(!sharedPreferences.contains("username"))
-        {
-            startActivity(Intent(this, LoginActivity::class.java))
-            finish()
-        }
 
         val toggle = ActionBarDrawerToggle(this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
         drawer_layout.addDrawerListener(toggle)
@@ -99,7 +96,7 @@ open class Drawer : AppCompatActivity(), NavigationView.OnNavigationItemSelected
                 startActivity(intent)
             }
             R.id.nav_settings -> {
-                //startActivity(Intent(this, SettingsActivity::class.java))
+                startActivity(Intent(this, SettingsActivity::class.java))
             }
             R.id.nav_about -> {
                 startActivity(Intent(this, AboutActivity::class.java))

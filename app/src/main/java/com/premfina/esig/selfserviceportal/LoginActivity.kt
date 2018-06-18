@@ -11,6 +11,7 @@ import android.os.Bundle
 import android.support.annotation.RequiresApi
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
+import android.support.v7.preference.PreferenceManager
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -27,7 +28,7 @@ class LoginActivity : AppCompatActivity() {
         val properties = Properties()
         properties.load(assets.open("selfservice-portal.properties"))
 
-        sharedPreferences = getSharedPreferences("Properties", Context.MODE_PRIVATE)
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
         val editor = sharedPreferences.edit()
 
         for(entry in properties)
@@ -68,7 +69,7 @@ class LoginActivity : AppCompatActivity() {
         editor.putString("email", finalUserDto.email)
         editor.apply()*/
 
-        val sharedPreferences = getSharedPreferences("User", Context.MODE_PRIVATE)
+        val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
         val editor = sharedPreferences.edit()
         editor.putString("username", "Mr Jorge Barroso Barea")
         editor.putString("email", "jorge.barroso@premfina.com")
