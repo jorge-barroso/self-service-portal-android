@@ -1,13 +1,31 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="actionBarSize">45dp</item>
-        <item name="displayOptions">homeAsUp</item>
+    <style name="NoActionBar.LightColors" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/fontGray</item>
+    </style>
+    <style name="NoActionBar.DarkColors" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccentDark</item>
+        <item name="android:textColor">@color/fontLightGray</item>
+    </style>
+
+    <style name="DarkActionBar.LightColors" parent="Base.Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:textColor">@color/font_gray</item>
+        <item name="android:textColor">@color/fontGray</item>
+    </style>
+    <style name="DarkActionBar.DarkColors" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccentDark</item>
+        <item name="android:textColor">@color/fontLightGray</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppThemeLight" parent="NoActionBar.LightColors">
+        <item name="actionBarSize">45dp</item>
+        <item name="displayOptions">homeAsUp</item>
         <item name="android:scaleType">centerCrop</item>
         <item name="buttonStyle">@style/Buttons</item>
         <item name="cardViewStyle">@style/CardViews</item>
@@ -17,11 +35,7 @@
         <item name="coordinatorLayoutStyle">@style/Widget.Support.CoordinatorLayout</item>
     </style>
 
-    <style name="ToolbarTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimary</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:textColor">@color/font_gray</item>
+    <style name="ToolbarThemeLight" parent="DarkActionBar.LightColors">
         <item name="buttonStyle">@style/Buttons</item>
         <item name="cardViewStyle">@style/CardViews</item>
         <item name="android:textViewStyle">@style/TextViews</item>
@@ -31,7 +45,7 @@
         <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
     </style>
 
-    <style name="About" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AboutLight" parent="NoActionBar.LightColors">
         <item name="actionBarSize">45dp</item>
         <item name="displayOptions">homeAsUp</item>
         <item name="android:textViewStyle">@style/AboutTextViews</item>
@@ -40,7 +54,7 @@
         <item name="android:windowBackground">@color/colorPrimary</item>
     </style>
 
-    <style name="FullScreenTheme" parent="AppTheme">
+    <style name="FullScreenTheme" parent="AppThemeLight">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -62,7 +76,7 @@
     </style>
 
     <style name="TextViews" parent="Widget.AppCompat.EditText">
-        <item name="android:textColor">@color/font_gray</item>
+        <item name="android:textColor">@color/fontGray</item>
         <item name="android:background">@null</item>
     </style>
 
@@ -71,7 +85,7 @@
         <item name="android:background">@null</item>
     </style>
 
-    <style name="AppTheme.NoActionBar">
+    <style name="AppThemeLight.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>

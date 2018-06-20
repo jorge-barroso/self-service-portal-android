@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#f08422</color>
-    <color name="colorPrimaryDark">#E0710B</color>
     <color name="colorAccent">#007ca0</color>
     <color name="white">#FFFFFF</color>
     <color name="premfina_gray">#efefed</color>
-    <color name="font_gray">#666666</color>
+    <color name="fontGray">#666666</color>
     <color name="primaryTextFusion">#9c6a3c</color>
+
+    <color name="colorPrimaryDark">#33343B</color>
+    <color name="colorAccentDark">#003e50</color>
+    <color name="fontLightGray">#9c9c9c</color>
 </resources>

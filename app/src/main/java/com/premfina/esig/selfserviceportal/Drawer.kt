@@ -16,12 +16,24 @@ import kotlinx.android.synthetic.main.activity_drawer.*
 import kotlinx.android.synthetic.main.app_bar_drawer.*
 import kotlinx.android.synthetic.main.app_bar_drawer.view.*
 import kotlinx.android.synthetic.main.content_drawer.*
+import java.util.*
 
 
 open class Drawer : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var sharedPreferences: SharedPreferences
     override fun onCreate(savedInstanceState: Bundle?) {
+        when(App.instance?.isNightModeEnabled)
+        {
+            0 -> {
+                setTheme(R.style.NoActionBar_DarkColors)
+            }
+            2 -> {
+                if(Calendar.getInstance().get(Calendar.HOUR)>=21)
+                    setTheme(R.style.NoActionBar_DarkColors)
+            }
+        }
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drawer)
 
