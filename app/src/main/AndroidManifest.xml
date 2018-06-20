@@ -44,7 +44,12 @@
             android:theme="@style/About" />
         <activity android:name=".SettingsActivity"
                   android:label="@string/title_activity_settings"
-                  android:theme="@style/ToolbarTheme"></activity>
+                  android:theme="@style/ToolbarTheme"
+            >
+            <!--meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/-->
+        </activity>
     </application>
 
 </manifest>

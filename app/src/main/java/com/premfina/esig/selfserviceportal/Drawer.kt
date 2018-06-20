@@ -25,11 +25,11 @@ open class Drawer : AppCompatActivity(), NavigationView.OnNavigationItemSelected
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drawer)
 
+        PreferenceManager.setDefaultValues(this, R.xml.preferences, false)
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
 
         if(!sharedPreferences.contains("username"))
         {
-            PreferenceManager.setDefaultValues(this, R.xml.preferences, false)
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }

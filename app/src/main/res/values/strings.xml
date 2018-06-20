@@ -35,6 +35,7 @@
     <string name="contact_question_main">Is your query related to one or more agreements?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="auto">Auto</string>
     <string name="agreement_numbers">Agreement Numbers</string>
     <string name="subject">Subject</string>
     <string name="query">Query</string>
