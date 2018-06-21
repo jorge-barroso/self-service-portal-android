@@ -2,28 +2,28 @@
 
     <style name="NoActionBar.LightColors" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorSecondary</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColor">@color/fontGray</item>
+        <item name="primaryTextColor">@color/fontGray</item>
+        <!--item name="secondaryTextColor"></item-->
+        <item name="backgroundCardColor">@color/premfina_gray</item>
+        <item name="primaryColor">@color/colorPrimary</item>
+        <item name="secondaryColor">@color/colorPrimaryDark</item>
     </style>
     <style name="NoActionBar.DarkColors" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccentDark</item>
         <item name="android:textColor">@color/fontLightGray</item>
+        <item name="primaryTextColor">@android:color/white</item>
+        <!--item name="secondaryTextColor"></item-->
+        <item name="backgroundCardColor">@android:color/widget_edittext_dark</item>
+        <item name="primaryColor">@color/colorPrimaryDark</item>
+        <item name="secondaryColor">@color/colorSecondaryDark</item>
     </style>
 
-    <style name="DarkActionBar.LightColors" parent="Base.Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimary</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:textColor">@color/fontGray</item>
-    </style>
-    <style name="DarkActionBar.DarkColors" parent="Base.Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccentDark</item>
-        <item name="android:textColor">@color/fontLightGray</item>
-    </style>
     <!-- Base application theme. -->
-    <style name="AppThemeLight" parent="NoActionBar.LightColors">
+    <style name="NoActionBar.LightColors.AppTheme">
         <item name="actionBarSize">45dp</item>
         <item name="displayOptions">homeAsUp</item>
         <item name="android:scaleType">centerCrop</item>
@@ -33,36 +33,31 @@
         <item name="android:typeface">serif</item>
         <item name="android:fontFamily">sans-serif</item>
         <item name="coordinatorLayoutStyle">@style/Widget.Support.CoordinatorLayout</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
     </style>
 
-    <style name="ToolbarThemeLight" parent="DarkActionBar.LightColors">
+    <style name="NoActionBar.DarkColors.AppTheme">
+        <item name="actionBarSize">45dp</item>
+        <item name="displayOptions">homeAsUp</item>
+        <item name="android:scaleType">centerCrop</item>
         <item name="buttonStyle">@style/Buttons</item>
         <item name="cardViewStyle">@style/CardViews</item>
         <item name="android:textViewStyle">@style/TextViews</item>
         <item name="android:typeface">serif</item>
         <item name="android:fontFamily">sans-serif</item>
         <item name="coordinatorLayoutStyle">@style/Widget.Support.CoordinatorLayout</item>
-        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
     </style>
 
     <style name="AboutLight" parent="NoActionBar.LightColors">
         <item name="actionBarSize">45dp</item>
-        <item name="displayOptions">homeAsUp</item>
         <item name="android:textViewStyle">@style/AboutTextViews</item>
-        <item name="android:typeface">serif</item>
-        <item name="android:fontFamily">sans-serif</item>
-        <item name="android:windowBackground">@color/colorPrimary</item>
-    </style>
-
-    <style name="FullScreenTheme" parent="AppThemeLight">
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">?attr/colorPrimary</item>
     </style>
 
     <style name="Buttons" parent="Widget.AppCompat.Button">
-        <item name="android:background">@color/colorPrimary</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:textColor">?attr/primaryTextColor</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
@@ -76,18 +71,13 @@
     </style>
 
     <style name="TextViews" parent="Widget.AppCompat.EditText">
-        <item name="android:textColor">@color/fontGray</item>
+        <item name="android:textColor">?attr/primaryTextColor</item>
         <item name="android:background">@null</item>
     </style>
 
     <style name="AboutTextViews" parent="Widget.AppCompat.EditText">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">?attr/primaryTextColor</item>
         <item name="android:background">@null</item>
-    </style>
-
-    <style name="AppThemeLight.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="TextViews.Head">
@@ -103,7 +93,7 @@
 
     <style name="ButtonBarStyle" parent="@android:style/ButtonBar">
         <item name="buttonStyle">@style/Buttons</item>
-        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:background">?attr/colorPrimary</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

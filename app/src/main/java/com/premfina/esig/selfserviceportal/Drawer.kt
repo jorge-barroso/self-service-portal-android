@@ -26,11 +26,11 @@ open class Drawer : AppCompatActivity(), NavigationView.OnNavigationItemSelected
         when(App.instance?.isNightModeEnabled)
         {
             0 -> {
-                setTheme(R.style.NoActionBar_DarkColors)
+                setTheme(R.style.NoActionBar_DarkColors_AppTheme)
             }
             2 -> {
                 if(Calendar.getInstance().get(Calendar.HOUR)>=21)
-                    setTheme(R.style.NoActionBar_DarkColors)
+                    setTheme(R.style.NoActionBar_DarkColors_AppTheme)
             }
         }
 

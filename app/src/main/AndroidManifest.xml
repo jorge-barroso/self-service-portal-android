@@ -14,15 +14,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/premfina_icon_round"
         android:supportsRtl="true"
-        android:theme="@style/AppThemeLight">
+        android:theme="@style/NoActionBar.LightColors.AppTheme">
         <activity
             android:name=".LoginActivity"
-            android:label="@string/login"
-            android:theme="@style/FullScreenTheme" />
+            android:label="@string/login" />
         <activity
             android:name=".RegistrationActivity"
-            android:label="@string/registration"
-            android:theme="@style/FullScreenTheme" />
+            android:label="@string/registration" />
         <activity
             android:name=".MainActivity"
             android:label="@string/home">
@@ -45,7 +43,6 @@
             android:theme="@style/About" />
         <activity android:name=".SettingsActivity"
                   android:label="@string/title_activity_settings"
-                  android:theme="@style/ToolbarThemeLight"
             >
             <!--meta-data
                 android:name="android.support.PARENT_ACTIVITY"
