@@ -4,6 +4,7 @@
         <attr name="primaryTextColor" format="color"/>
         <attr name="primaryColor" format="color"/>
         <attr name="secondaryColor" format="color"/>
+        <attr name="middleColor" format="color"/>
         <attr name="secondaryTextColor" format="color"/>
         <attr name="backgroundCardColor" format="color"/>
     </declare-styleable>

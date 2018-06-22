@@ -6,6 +6,7 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColor">@color/fontGray</item>
         <item name="primaryTextColor">@color/fontGray</item>
+        <item name="middleColor"></item>
         <!--item name="secondaryTextColor"></item-->
         <item name="backgroundCardColor">@color/premfina_gray</item>
         <item name="primaryColor">@color/colorPrimary</item>
@@ -13,9 +14,11 @@
     </style>
     <style name="NoActionBar.DarkColors" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorSecondaryDark</item>
         <item name="colorAccent">@color/colorAccentDark</item>
         <item name="android:textColor">@color/fontLightGray</item>
         <item name="primaryTextColor">@android:color/white</item>
+        <item name="middleColor">@color/fontGray</item>
         <!--item name="secondaryTextColor"></item-->
         <item name="backgroundCardColor">@android:color/widget_edittext_dark</item>
         <item name="primaryColor">@color/colorPrimaryDark</item>
@@ -52,11 +55,11 @@
     <style name="AboutLight" parent="NoActionBar.LightColors">
         <item name="actionBarSize">45dp</item>
         <item name="android:textViewStyle">@style/AboutTextViews</item>
-        <item name="android:windowBackground">?attr/colorPrimary</item>
+        <item name="android:windowBackground">?attr/primaryColor</item>
     </style>
 
     <style name="Buttons" parent="Widget.AppCompat.Button">
-        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:background">?attr/primaryColor</item>
         <item name="android:textColor">?attr/primaryTextColor</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
