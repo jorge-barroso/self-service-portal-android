@@ -3,18 +3,21 @@ package com.premfina.esig.selfserviceportal
 import android.Manifest
 import android.app.DownloadManager
 import android.content.Context
+import android.content.Intent
+import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.os.Environment
+import android.preference.PreferenceManager
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
-import kotlin.concurrent.thread
 import kotlinx.android.synthetic.main.activity_document_details.*
+import kotlin.concurrent.thread
 
 
 class DocumentDetailsActivity : Drawer() {
@@ -22,6 +25,8 @@ class DocumentDetailsActivity : Drawer() {
     private lateinit var agreementUrl: String
     private lateinit var agreementNumber: String
     private lateinit var tabsView: MyCustomTabsView
+    private lateinit var sharedPReferences: SharedPreferences
+    private var ownBrowser: Boolean = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         addToFrame(R.layout.activity_document_details)
@@ -39,11 +44,17 @@ class DocumentDetailsActivity : Drawer() {
                 tabsView = MyCustomTabsView(this, agreementUrl)
             }
         }
+
+        sharedPReferences = PreferenceManager.getDefaultSharedPreferences(this)
+        ownBrowser = sharedPReferences.getBoolean(SettingsActivity.ownbrowserPreferenceKey, false)
     }
 
     fun viewAgreement(view: View)
     {
-        tabsView.show()
+        if(ownBrowser)
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(agreementUrl)))
+        else
+            tabsView.show()
     }
 
     fun downloadAgreement(view: View)

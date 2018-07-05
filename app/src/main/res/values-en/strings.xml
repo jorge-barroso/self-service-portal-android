@@ -52,4 +52,5 @@
     <string name="more_about">Premfina</string>
     <string name="use_external_browser_main">Use external browser</string>
     <string name="use_external_browser_desc">Open links on an external browser</string>
+    <string name="auto">Auto</string>
 </resources>

@@ -47,6 +47,7 @@
     <string name="agreement_details">Agreement Details</string>
     <string name="add_agreement_desc">Use this section to add new agreements.\n\nJust type in your new agreement and we will add it to your list of agreements.\n\nYou may have to eSign it if it\'s not a renewal agreement.</string>
     <string name="add">Add</string>
+    <string name="app_title">Premfina Self-service Portal</string>
 
     <string name="background_description">Background image, featuring a picture of the sea with an island on one side, during the sunset</string>
     <string name="title_activity_settings">Settings</string>

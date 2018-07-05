@@ -52,4 +52,5 @@
     <string name="more_about">Premfina</string>
     <string name="use_external_browser_main">Utilizar navegador externo</string>
     <string name="use_external_browser_desc">Abrir enlaces en un navegador externo</string>
+    <string name="auto">Auto</string>
 </resources>

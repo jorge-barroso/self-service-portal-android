@@ -1,13 +1,19 @@
 package com.premfina.esig.selfserviceportal
 
 import android.content.Intent
+import android.content.res.Resources
+import android.content.res.TypedArray
 import android.os.Bundle
 import android.support.v4.content.ContextCompat
 import android.support.v7.preference.PreferenceManager
 import android.support.v7.widget.LinearLayoutManager
 import android.text.TextUtils
+import android.util.Log
 import android.view.View
-import android.widget.*
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.TextView
+import android.widget.Toast
 import com.premfina.selfservice.dto.DocumentDto
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.recycler_layout.view.*
@@ -69,7 +75,15 @@ class MainActivity : Drawer() {
         included_view.isFocusable = false
         val recyclerTextView: TextView = included_view.recycler_text_view
         recyclerTextView.text = getString(R.string.agreement_details)
-        recyclerTextView.background = ContextCompat.getDrawable(this, R.color.colorPrimaryDark)
+
+        val secondaryColor = IntArray(1){R.attr.colorSecondary}
+        val theme: Resources.Theme = applicationContext.theme
+        val ta: TypedArray = theme.obtainStyledAttributes(secondaryColor)
+        val color: Int = ta.getResourceId(0, android.R.color.black)
+        Log.i("DRAWABLE", Integer.toHexString(color))
+        recyclerTextView.background = ContextCompat.getDrawable(this, color)
+        ta.recycle()
+
         recyclerTextView.setTextColor(ContextCompat.getColor(this, android.R.color.white))
         //recyclerTextView.isClickable = true
         recyclerTextView.isFocusableInTouchMode = false

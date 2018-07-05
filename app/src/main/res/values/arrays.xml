@@ -5,7 +5,7 @@
         <item>@string/no</item>
         <item>@string/auto</item>
     </string-array>
-    <string-array name="night_mode_values">
+    <string-array name="night_mode_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
