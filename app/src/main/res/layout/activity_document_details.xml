@@ -9,7 +9,8 @@
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
 
         <android.support.v7.widget.CardView
             android:id="@+id/header_frame"
@@ -22,15 +23,15 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/agreement_number_view"
+                android:id="@+id/agreement_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:paddingBottom="5dp"
+                android:layout_marginEnd="8dp"
                 android:paddingLeft="20dp"
-                android:paddingRight="20dp"
                 android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
                 android:text="000000107"
                 android:textColor="@android:color/black"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -38,56 +39,15 @@
                 app:layout_constraintTop_toTopOf="parent" />
         </android.support.v7.widget.CardView>
 
-        <Button
-            android:id="@+id/view_button"
-            style="@style/ButtonBarStyle"
-            android:layout_width="90dp"
-            android:layout_height="40dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="25dp"
-            android:onClick="viewAgreement"
-            android:text="@string/view"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView" />
-
-        <Button
-            android:id="@+id/email_button"
-            style="@style/ButtonBarStyle"
-            android:layout_width="90dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="20dp"
-            android:text="@string/email"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_button" />
-
-        <Button
-            android:id="@+id/download_button"
-            style="@style/ButtonBarStyle"
-            android:layout_width="90dp"
-            android:layout_height="40dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginTop="20dp"
-            android:onClick="downloadAgreement"
-            android:text="@string/download"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView" />
-
         <android.support.v7.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
             android:layout_marginTop="72dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             app:contentPadding="20dp"
             app:contentPaddingTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -100,48 +60,243 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/premium_value"
+                    android:id="@+id/broker_name_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:text="£4,000"
-                    app:layout_constraintStart_toStartOf="@+id/premium_label"
-                    app:layout_constraintTop_toBottomOf="@+id/premium_label" />
-
-                <TextView
-                    android:id="@+id/premium_label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginTop="30dp"
-                    android:text="@string/premium"
+                    android:text="@string/broker_name"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/created_on_date" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/created_on_label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginStart="40dp"
-                    android:text="Created On:"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <TextView
-                    android:id="@+id/created_on_date"
+                    android:id="@+id/broker_name"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/broker_name_label" />
+
+                <TextView
+                    android:id="@+id/policy_number_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="07/06/2018 18:18"
-                    app:layout_constraintStart_toStartOf="@+id/created_on_label"
-                    app:layout_constraintTop_toBottomOf="@+id/created_on_label" />
+                    android:text="@string/policy_number"
+                    app:layout_constraintStart_toStartOf="@+id/broker_name_label"
+                    app:layout_constraintTop_toBottomOf="@+id/broker_name_label" />
+
+                <TextView
+                    android:id="@+id/policy_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/policy_number_label" />
+
+                <TextView
+                    android:id="@+id/number_of_payments_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/number_of_payments"
+                    app:layout_constraintStart_toStartOf="@+id/broker_name_label"
+                    app:layout_constraintTop_toBottomOf="@+id/policy_number_label" />
+
+                <TextView
+                    android:id="@+id/number_of_payments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/number_of_payments_label" />
+
+                <TextView
+                    android:id="@+id/agreement_status_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/status"
+                    app:layout_constraintStart_toStartOf="@+id/broker_name_label"
+                    app:layout_constraintTop_toBottomOf="@+id/number_of_payments_label" />
+
+                <TextView
+                    android:id="@+id/agreement_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/agreement_status_label" />
+
+                <TextView
+                    android:id="@+id/maturity_date_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/maturity_date"
+                    app:layout_constraintStart_toStartOf="@+id/broker_name_label"
+                    app:layout_constraintTop_toBottomOf="@+id/agreement_status_label" />
+
+                <TextView
+                    android:id="@+id/maturity_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/maturity_date_label" />
+
+                <TextView
+                    android:id="@+id/live_date_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/live_date"
+                    app:layout_constraintStart_toStartOf="@+id/broker_name_label"
+                    app:layout_constraintTop_toBottomOf="@+id/maturity_date_label" />
+
+                <TextView
+                    android:id="@+id/live_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/maturity_date_label" />
+
+                <TextView
+                    android:id="@+id/next_due_date_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/next_due_date"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/live_date_label" />
+
+                <TextView
+                    android:id="@+id/next_due_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/next_due_date_label" />
+
+                <TextView
+                    android:id="@+id/apr_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/apr"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/next_due_date_label" />
+
+                <TextView
+                    android:id="@+id/apr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/apr_label" />
+
+                <TextView
+                    android:id="@+id/monthly_amount_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/monthly_amount"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/apr_label" />
+
+                <TextView
+                    android:id="@+id/monthly_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/monthly_amount_label" />
+
+                <TextView
+                    android:id="@+id/cleared_balance_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/cleared"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/monthly_amount_label" />
+
+                <TextView
+                    android:id="@+id/cleared_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/cleared_balance_label" />
+
+                <TextView
+                    android:id="@+id/total_amount_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/total_amount"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cleared_balance_label" />
+
+                <TextView
+                    android:id="@+id/total_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cleared_balance_label" />
             </android.support.constraint.ConstraintLayout>
         </android.support.v7.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/view_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="viewAgreement"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            app:srcCompat="@drawable/ic_insert_drive_file_white_24dp" />
+
+        <ImageButton
+            android:id="@+id/download_documents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="downloadAgreement"
+            app:layout_constraintEnd_toStartOf="@+id/email_documents"
+            app:layout_constraintStart_toEndOf="@+id/view_agreement"
+            app:layout_constraintTop_toTopOf="@+id/view_agreement"
+            app:srcCompat="@drawable/ic_file_download_white_24dp" />
+
+        <ImageButton
+            android:id="@+id/email_documents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="emailAgreement"
+            app:layout_constraintEnd_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toTopOf="@+id/download_documents"
+            app:srcCompat="@drawable/ic_email_white_24dp" />
 
     </android.support.constraint.ConstraintLayout>
 

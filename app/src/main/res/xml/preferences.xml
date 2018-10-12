@@ -6,10 +6,10 @@
         android:key="ownbrowser_preference"
         android:summary="@string/use_external_browser_desc"
         android:title="@string/use_external_browser_main" />
-    <ListPreference
+    <!--ListPreference
         android:defaultValue="1"
         android:entries="@array/night_mode_opts"
         android:entryValues="@array/night_mode_values"
         android:key="night_mode_preference"
-        android:title="@string/night_mode" />
+        android:title="@string/night_mode" /-->
 </PreferenceScreen>

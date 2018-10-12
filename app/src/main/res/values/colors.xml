@@ -2,10 +2,12 @@
 <resources>
     <color name="colorPrimary">#f08422</color>
     <color name="colorMiddle">#dda068</color>
-    <color name="colorSecondary">#E0710B</color>
-    <color name="colorAccent">#007ca0</color>
+    <color name="colorSecondary">#c16200</color>
+    <color name="colorAccent">#002458</color>
     <color name="premfina_gray">#efefed</color>
-    <color name="fontGray">#666666</color>
+    <color name="premfina_cream">#f1eee9</color>
+    <color name="fontColor">#002458</color>
+    <color name="light_orange">#f8efe3</color>
     <color name="primaryTextFusion">#9c6a3c</color>
 
     <color name="colorPrimaryDark">#33343B</color>

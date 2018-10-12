@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/back_bottom"
+        android:checked="false"
+        android:icon="@drawable/ic_arrow_back_white_86dp"
+        android:title="@string/back" />
+
+    <item
+        android:id="@+id/dashboard_bottom"
+        android:checked="true"
+        android:icon="@drawable/ic_pie_chart_white_24dp"
+        android:title="@string/dashboard" />
+
+    <item
+        android:id="@+id/agreements_bottom"
+        android:icon="@drawable/ic_insert_drive_file_white_24dp"
+        android:title="@string/agreements" />
+</menu>

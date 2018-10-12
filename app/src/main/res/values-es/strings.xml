@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Selfservice Portal</string>
+    <string name="app_name">Portal PremFina</string>
     <string name="login">Iniciar Sesión</string>
     <string name="introduce_login">Introduce tus detalles para iniciar sesión</string>
     <string name="register">Regístrate</string>
@@ -37,10 +37,8 @@
     <string name="subject">Tema</string>
     <string name="query">Consulta</string>
     <string name="select_agreements">Selecciona algún acuerdo</string>
-    <string name="home_desc">Selecciona un acuerdo para acceder a sus documentos y ver datos relacionados</string>
     <string name="view">Ver</string>
     <string name="download">Descargar</string>
-    <string name="premium">Prima</string>
     <string name="agreement_details">Detalles del acuerdo</string>
     <string name="background_description">Imagen de fondo, una fotografía del mar con una isla a un lado durante el atardecer</string>
     <string name="title_activity_settings">Ajustes</string>
@@ -53,4 +51,32 @@
     <string name="use_external_browser_main">Utilizar navegador externo</string>
     <string name="use_external_browser_desc">Abrir enlaces en un navegador externo</string>
     <string name="auto">Auto</string>
+    <string name="app_title">Portal Autoservicio de Premfina</string>
+    <string name="reg_success">Comprueba tu email para crear una contraseña</string>
+    <string name="invalid_agreementNumber">Inserta un número de acuerdo válido</string>
+    <string name="emailed_successful">Enviado con éxito</string>
+    <string name="emailed_failure">Error enviando email</string>
+    <string name="cleared">Balance pagado</string>
+    <string name="back_to_login">Iniciar sesión</string>
+    <string name="error_loading_broker">Hubo un problema actualizando datos, comprueba tu conexión</string>
+    <string name="back">Atrás</string>
+    <string name="forgotten_password">Olvidaste tu contraseña?</string>
+    <string name="email_reset_password">Enviar recuperación de contrasña</string>
+    <string name="agreements_amount">Número de acuerdos: %1$d</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="agreements">Acuerdo</string>
+    <string name="title_activity_view_agreements">Total credit amount: $1%f</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="total_amount">Crédito total</string>
+    <string name="monthly_amount">Pago mensual</string>
+    <string name="status">Estado</string>
+    <string name="next_due_date">Siguiente cobro</string>
+    <string name="broker_name">Broker</string>
+    <string name="to_pay">Pendiente: %1$s</string>
+    <string name="paid">Pagado: %1$s</string>
+    <string name="policy_number">Número de póliza</string>
+    <string name="number_of_payments">Pagos</string>
+    <string name="maturity_date">Madurez</string>
+    <string name="live_date">Activo desde</string>
+    <string name="apr">TAE</string>
 </resources>

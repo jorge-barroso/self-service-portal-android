@@ -8,45 +8,67 @@ import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
-import android.support.v7.app.AppCompatActivity
 import android.support.v7.preference.PreferenceManager
+import android.util.Log
 import android.view.*
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_drawer.*
 import kotlinx.android.synthetic.main.app_bar_drawer.*
 import kotlinx.android.synthetic.main.app_bar_drawer.view.*
 import kotlinx.android.synthetic.main.content_drawer.*
-import java.util.*
 
 
-open class Drawer : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+open class Drawer : MyBaseApplication(), NavigationView.OnNavigationItemSelectedListener {
 
-    private lateinit var sharedPreferences: SharedPreferences
+    protected lateinit var sharedPreferences: SharedPreferences
+    protected lateinit var userPreferences: SharedPreferences
+    protected lateinit var brokerPreferences: SharedPreferences
     override fun onCreate(savedInstanceState: Bundle?) {
-        when(App.instance?.isNightModeEnabled)
-        {
-            0 -> {
-                setTheme(R.style.NoActionBar_DarkColors_AppTheme)
-            }
-            2 -> {
-                if(Calendar.getInstance().get(Calendar.HOUR)>=21)
-                    setTheme(R.style.NoActionBar_DarkColors_AppTheme)
-            }
-        }
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drawer)
 
-        PreferenceManager.setDefaultValues(this, R.xml.preferences, false)
-        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
+        val currentItemId = intent.getIntExtra("element_id", R.id.dashboard_bottom)
 
-        if(!sharedPreferences.contains("username"))
+        bottom_menu.selectedItemId = currentItemId
+
+        bottom_menu.setOnNavigationItemSelectedListener {
+            when (it.itemId) {
+                currentItemId -> {
+                    false
+                }
+                R.id.agreements_bottom -> {
+                    Log.i(localClassName, "Agreements button clicked")
+                    val intent = Intent(this, ViewAgreementsActivity::class.java)
+                    intent.putExtra("element_id", it.itemId)
+                    startActivity(intent)
+                    true
+                }
+                R.id.dashboard_bottom -> {
+                    Log.i(localClassName, "Dashboard button clicked")
+                    val intent = Intent(this, MainActivity::class.java)
+                    intent.putExtra("element_id", it.itemId)
+                    startActivity(intent)
+                    true
+                }
+                R.id.back_bottom -> {
+                    Log.i(localClassName, "Back button clicked")
+                    true
+                }
+                else -> false
+            }
+        }
+
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
+        userPreferences = getSharedPreferences("User", Context.MODE_PRIVATE)
+        brokerPreferences = getSharedPreferences("Broker", Context.MODE_PRIVATE)
+
+        if (!userPreferences.contains("username"))
         {
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
 
-        toolbar.label_text.text = sharedPreferences.getString("username", "")
+        toolbar.label_text.text = userPreferences.getString("username", "")
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
 
@@ -59,10 +81,11 @@ open class Drawer : AppCompatActivity(), NavigationView.OnNavigationItemSelected
         val navUsername: TextView = headerView.findViewById(R.id.navigation_username)
         val navUserEmail: TextView = headerView.findViewById(R.id.navigation_email)
 
-        navUsername.text = sharedPreferences.getString("username", "")
-        navUserEmail.text = sharedPreferences.getString("email", "")
+        navUsername.text = userPreferences.getString("username", "")
+        navUserEmail.text = userPreferences.getString("email", "")
 
         nav_view.setNavigationItemSelectedListener(this)
+        nav_view.setBackgroundColor(getColor(R.color.premfina_gray))
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -85,6 +108,10 @@ open class Drawer : AppCompatActivity(), NavigationView.OnNavigationItemSelected
                 startActivity(Intent(this, AddAgreementActivity::class.java))
                 true
             }
+            android.R.id.home -> {
+                super.onBackPressed()
+                true
+            }
             else -> {
                 false
             }
@@ -104,7 +131,7 @@ open class Drawer : AppCompatActivity(), NavigationView.OnNavigationItemSelected
             R.id.nav_call -> {
                 item.isChecked = false
                 val intent = Intent(Intent.ACTION_DIAL)
-                intent.data = Uri.parse("tel:07752319217")
+                intent.data = Uri.parse("tel:" + brokerPreferences.getString("phone", ""))
                 startActivity(intent)
             }
             R.id.nav_settings -> {
@@ -115,6 +142,7 @@ open class Drawer : AppCompatActivity(), NavigationView.OnNavigationItemSelected
             }
             R.id.nav_logout -> {
                 sharedPreferences.edit().clear().apply()
+                userPreferences.edit().clear().apply()
                 startActivity(Intent(this, LoginActivity::class.java))
                 finish()
             }

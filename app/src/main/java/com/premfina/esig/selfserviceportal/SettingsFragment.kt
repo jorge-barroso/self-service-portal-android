@@ -20,9 +20,10 @@ class SettingsFragment : PreferenceFragmentCompat(){
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.preferences, rootKey)
 
-        /*val preference = findPreference(SettingsActivity.ownbrowserPreferenceKey)
-        preference.onPreferenceChangeListener = Preference.OnPreferenceChangeListener { preference, newValue ->
-            Log.i(className, preference.key+": "+newValue.toString())
+        /*val switchPreference = findPreference(SettingsActivity.ownbrowserPreferenceKey) as SwitchPreference
+        switchPreference.onPreferenceChangeListener = Preference.OnPreferenceChangeListener { preference, newValue ->
+            Log.i(this.javaClass.simpleName, preference.key+": "+newValue.toString())
+            switchPreference.isChecked = newValue.toString().toBoolean()
             newValue.toString().toBoolean()
         }*/
     }

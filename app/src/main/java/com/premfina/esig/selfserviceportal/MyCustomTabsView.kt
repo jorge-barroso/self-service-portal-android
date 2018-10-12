@@ -10,12 +10,13 @@ import android.os.Bundle
 import android.support.customtabs.*
 import android.support.v4.content.ContextCompat
 
-class MyCustomTabsView(ctx: Context, url: String, otherUrls: ArrayList<String> = ArrayList(0)) {
+
+class MyCustomTabsView(private val ctx: Context, url: String, otherUrls: ArrayList<String> = ArrayList(0)) {
     private val CUSTOM_TAB_PACKAGE_NAME: String = "com.android.chrome"
     private lateinit var customTabsClient: CustomTabsClient
+    @Volatile
     private lateinit var customTabsIntent: CustomTabsIntent
     private val defaultUrl: Uri = Uri.parse(url)
-    private val ctx: Context = ctx
     private var ready: Boolean = false
     init{
         val bundles = ArrayList<Bundle>(otherUrls.size)
@@ -51,7 +52,17 @@ class MyCustomTabsView(ctx: Context, url: String, otherUrls: ArrayList<String> =
     }
 
     fun show(url: Uri = defaultUrl) {
-        customTabsIntent.launchUrl(ctx, url)
+        if (this.isReady())
+            customTabsIntent.launchUrl(ctx, url)
+        else {
+            val customTabsIntent = CustomTabsIntent.Builder()
+                    .setToolbarColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(ctx, R.color.colorPrimaryDark))))
+                    .setSecondaryToolbarColor(Color.parseColor("#" + Integer.toHexString(ContextCompat.getColor(ctx, R.color.colorPrimary))))
+                    .setCloseButtonIcon(BitmapFactory.decodeResource(ctx.resources, R.drawable.ic_arrow_back_white_86dp))
+                    .build()
+            customTabsIntent.intent.putExtra(Intent.EXTRA_REFERRER, Uri.parse(Intent.URI_ANDROID_APP_SCHEME.toString() + "//" + ctx.packageName))
+            customTabsIntent.launchUrl(ctx, url)
+        }
     }
 
     fun isReady() : Boolean {

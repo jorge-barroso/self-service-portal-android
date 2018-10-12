@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.premfina.esig.selfserviceportal">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -8,28 +9,26 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name="com.premfina.esig.selfserviceportal.App"
         android:allowBackup="true"
-        android:icon="@mipmap/premfina_icon_round"
+        android:icon="@mipmap/app_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/premfina_icon_round"
+        android:roundIcon="@mipmap/app_logo_round"
         android:supportsRtl="true"
-        android:theme="@style/NoActionBar.LightColors.AppTheme">
+        android:theme="@style/NoActionBar.LightColors.AppTheme.Launcher"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".LoginActivity"
-            android:label="@string/login" />
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".RegistrationActivity"
             android:label="@string/registration" />
         <activity
+            android:name=".Drawer"
+            android:theme="@style/Main.NoBackground" />
+        <activity
             android:name=".MainActivity"
-            android:label="@string/home">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:label="@string/home" />
         <activity
             android:name=".ContactActivity"
             android:label="@string/title_activity_contact" />
@@ -41,12 +40,27 @@
             android:name=".AboutActivity"
             android:label="About"
             android:theme="@style/About" />
-        <activity android:name=".SettingsActivity"
-                  android:label="@string/title_activity_settings"
-            >
-            <!--meta-data
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".LoadingActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ForgottenPasswordActivity" />
+        <activity
+            android:name=".ViewAgreementsActivity"
+            android:label="@string/title_activity_view_agreements"
+            android:parentActivityName=".Drawer"
+            android:theme="@style/NoActionBar.LightColors.AppTheme.Launcher">
+            <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/-->
+                android:value="com.premfina.esig.selfserviceportal.Drawer" />
         </activity>
     </application>
 

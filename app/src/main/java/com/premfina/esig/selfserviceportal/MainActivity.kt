@@ -1,22 +1,14 @@
 package com.premfina.esig.selfserviceportal
 
 import android.content.Intent
-import android.content.res.Resources
-import android.content.res.TypedArray
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
-import android.support.v7.preference.PreferenceManager
-import android.support.v7.widget.LinearLayoutManager
-import android.text.TextUtils
-import android.util.Log
-import android.view.View
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.TextView
-import android.widget.Toast
-import com.premfina.selfservice.dto.DocumentDto
+import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+import com.fasterxml.jackson.module.kotlin.readValue
+import com.premfina.selfservice.dto.UserDto
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.recycler_layout.view.*
+import lecho.lib.hellocharts.model.PieChartData
+import lecho.lib.hellocharts.model.SliceValue
+import java.text.NumberFormat
 
 class MainActivity : Drawer() {
 
@@ -27,77 +19,74 @@ class MainActivity : Drawer() {
      * - Give the spinners an identification (don't remember property for this extra value) matching the index of the agreement the spinner is for
      * - By this we can get the exact document
      */
-    private val documents1: ArrayList<DocumentDto> = arrayListOf(DocumentDto("", "SECCI_AGREEMENT", "02/04/2018 14:36", "https://apps.esignlive.eu/auth?target=https%3A%2F%2Fapps.esignlive.eu%2Ftransaction%2FMsIRYW24fwNX8NBJk2uW6M5_VHM%3D%2Fsign&loginToken=My4zbjk5b2oxcTF6SkU0OVBZbXlNczg3ZFZDc1VPcENiMjNIWFBWSTdqNkViRlc0KzdGWjUyTTFJYmZNRjFiYXA0c1ZCcDFNTE9jeFVYUWR2cmlOVDR6QT09"), DocumentDto("", "Renewal Letter", "02/04/2018 14:36", ""))
-    private val documents2: ArrayList<DocumentDto> = arrayListOf(DocumentDto("", "Renewal Letter", "02/04/2018 14:36", ""))
-    private val agreements: Array<String> = arrayOf("000000107", "000000108")
-    private val allData: Map<String, ArrayList<DocumentDto>> = mapOf(agreements[0] to documents1, agreements[1] to documents2)
-    private var selectedDocumentsNames: ArrayList<DocumentDto> = ArrayList(0)
-    private var currentAgreement: String = ""
+    //private lateinit var agreementsSpinner: AgreementsSpinner
     //val CLASSNAME = this::class.simpleName
+    private val nf = NumberFormat.getCurrencyInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        val sharedPref = PreferenceManager.getDefaultSharedPreferences(this)
-        val switchPref = sharedPref.getBoolean(SettingsActivity.ownbrowserPreferenceKey, false)
-        Toast.makeText(this, switchPref.toString(), Toast.LENGTH_LONG).show()
-
         addToFrame(layoutResID = R.layout.activity_main)
 
-        val linearLayout = LinearLayoutManager(this@MainActivity)
-        val recyclerAdapter = CustomRecyclerAdapter(selectedDocumentsNames)
+        val userDto = jacksonObjectMapper().readValue<UserDto>(userPreferences.getString("userDto", "")!!)
+        val agreements = userDto.agreementDtos
+        val amountOfAgreements = agreements.size
 
-
-        //Spinner
-        val arrayAdapter = ArrayAdapter<String>(this@MainActivity, android.R.layout.simple_spinner_dropdown_item, android.R.id.text1)
-        arrayAdapter.addAll(allData.keys)
-
-        agreements_spinner.adapter = arrayAdapter
-        agreements_spinner.onItemSelectedListener = object: AdapterView.OnItemSelectedListener {
-            override fun onNothingSelected(p0: AdapterView<*>?) {}
-
-            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                currentAgreement = agreements[position]
-
-                //val listValues = allData[currentAgreement] ?: ArrayList(0)
-                recyclerAdapter.refreshDataSet(allData[agreements[position]] ?: ArrayList(0))
-                recyclerAdapter.notifyDataSetChanged()
-            }
+        var totalToPay = 0.0
+        var totalPaid = 0.0
+        for (i in 0 until amountOfAgreements) {
+            totalToPay += agreements[i].totalAmount.toFloat()
+            totalPaid += agreements[i].clearedBalance.toFloat()
         }
 
-        //RecyclerView
-        documents_view.apply {
-            layoutManager = linearLayout
+        val pieData: ArrayList<SliceValue> = ArrayList(2)
+        pieData.add(SliceValue(totalToPay.toFloat(), getColor(R.color.light_orange)).setLabel(getString(R.string.to_pay))) //To pay
+        pieData.add(SliceValue(totalPaid.toFloat(), getColor(R.color.colorPrimary)).setLabel(getString(R.string.paid))) //Already paid
 
-            adapter = recyclerAdapter
-        }
+        balance_chart.pieChartData = PieChartData(pieData)
 
-        //Extra element to go to agreement details
-        included_view.isFocusable = false
-        val recyclerTextView: TextView = included_view.recycler_text_view
-        recyclerTextView.text = getString(R.string.agreement_details)
+        agreements_amount.text = getString(R.string.agreements_amount, amountOfAgreements)
+        to_pay.text = getString(R.string.to_pay, nf.format(totalToPay))
+        paid.text = getString(R.string.paid, nf.format(totalPaid))
 
-        val secondaryColor = IntArray(1){R.attr.colorSecondary}
-        val theme: Resources.Theme = applicationContext.theme
-        val ta: TypedArray = theme.obtainStyledAttributes(secondaryColor)
-        val color: Int = ta.getResourceId(0, android.R.color.black)
-        Log.i("DRAWABLE", Integer.toHexString(color))
-        recyclerTextView.background = ContextCompat.getDrawable(this, color)
-        ta.recycle()
-
-        recyclerTextView.setTextColor(ContextCompat.getColor(this, android.R.color.white))
-        //recyclerTextView.isClickable = true
-        recyclerTextView.isFocusableInTouchMode = false
-        recyclerTextView.setOnClickListener { moreDetails() }
+        balance_chart.setOnClickListener { startActivity(Intent(this, ViewAgreementsActivity::class.java)) }
+    }
+    /*val intent = intent
+    if(intent.getStringExtra("signatureUrl") != null)
+    {
+        val customTabsView = MyCustomTabsView(this, intent.getStringExtra("signatureUrl"))
+        customTabsView.show()
     }
 
-    private fun moreDetails() {
-        val intent = Intent(this@MainActivity, DocumentDetailsActivity::class.java)
-        intent.putExtra("agreement", currentAgreement)
-        for(document in allData[currentAgreement] ?: ArrayList(0))
+    val userDto = jacksonObjectMapper().readValue<UserDto>(userPreferences.getString("userDto", "")!!)
+    agreementsSpinner = AgreementsSpinner(this, userDto, agreements_spinner, documents_view)
+
+    //Extra element to go to agreement details
+    included_view.isFocusable = false
+    val recyclerTextView: TextView = included_view.recycler_text_view
+    recyclerTextView.text = getString(R.string.agreement_details)
+
+    recyclerTextView.setTextColor(ContextCompat.getColor(this, android.R.color.white))
+    //recyclerTextView.isClickable = true
+    recyclerTextView.isFocusableInTouchMode = false
+    recyclerTextView.setOnClickListener { moreDetails() }
+}
+
+private fun moreDetails() {
+    val intent = Intent(this@MainActivity, DocumentDetailsActivity::class.java)
+    intent.putExtra("agreement", agreementsSpinner.currentAgreement.agreementNumber)
+    val agreement = agreementsSpinner.currentAgreement
+    val dateParser = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss")
+    val dateFormatter = SimpleDateFormat.getDateTimeInstance()
+    for(document in agreement!!.documentDtos)
+    {
+        if(!TextUtils.isEmpty(document.signedDocumentUrl))
         {
-            if(!TextUtils.isEmpty(document.signedDocumentUrl))
-                intent.putExtra("agreement_url", document.signedDocumentUrl)
+            intent.putExtra("agreement_url", document.signedDocumentUrl)
+            val date = dateParser.parse(document.createdOn)
+            intent.putExtra("creation_date", dateFormatter.format(date))
         }
-        startActivity(intent)
     }
+
+    intent.putExtra("cleared_balance", agreement.clearedBalance)
+    startActivity(intent)
+}*/
 }

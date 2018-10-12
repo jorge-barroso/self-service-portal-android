@@ -4,21 +4,35 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorSecondary</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:textColor">@color/fontGray</item>
-        <item name="primaryTextColor">@color/fontGray</item>
+        <item name="android:textColor">@color/fontColor</item>
         <!--item name="secondaryTextColor"></item-->
         <item name="backgroundCardColor">@color/premfina_gray</item>
-        <item name="primaryColor">@color/colorPrimary</item>
-        <item name="secondaryColor">@color/colorSecondary</item>
-        <item name="middleColor">#e69f60</item>
+        <item name="middleColor">@color/colorMiddle</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
     </style>
+
+    <style name="Main.Background" parent="NoActionBar.LightColors.AppTheme">
+        <item name="android:windowBackground">@mipmap/orange_apple</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+        <!--item name="android:windowEnterTransition">@transition</item>
+        <item name="android:windowExitTransition">@transition/explode</item-->
+
+    </style>
+
+    <style name="NoActionBar.LightColors.AppTheme.Launcher" parent="NoActionBar.LightColors.AppTheme">
+        <item name="android:windowBackground">@mipmap/splash_logo</item>
+    </style>
+
+    <style name="Main.NoBackground" parent="NoActionBar.LightColors.AppTheme"></style>
+
     <style name="NoActionBar.DarkColors" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimaryDark</item>
         <item name="colorPrimaryDark">@color/colorSecondaryDark</item>
         <item name="colorAccent">@color/colorAccentDark</item>
         <item name="android:textColor">@color/fontLightGray</item>
         <item name="primaryTextColor">@android:color/white</item>
-        <item name="middleColor">@color/fontGray</item>
+        <item name="middleColor">@color/fontColor</item>
         <!--item name="secondaryTextColor"></item-->
         <item name="backgroundCardColor">@android:color/widget_edittext_dark</item>
         <item name="primaryColor">@color/colorPrimaryDark</item>
@@ -34,7 +48,6 @@
         <item name="cardViewStyle">@style/CardViews</item>
         <item name="android:textViewStyle">@style/TextViews</item>
         <item name="android:typeface">serif</item>
-        <item name="android:fontFamily">sans-serif</item>
         <item name="coordinatorLayoutStyle">@style/Widget.Support.CoordinatorLayout</item>
         <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
     </style>
@@ -47,26 +60,32 @@
         <item name="cardViewStyle">@style/CardViews</item>
         <item name="android:textViewStyle">@style/TextViews</item>
         <item name="android:typeface">serif</item>
-        <item name="android:fontFamily">sans-serif</item>
         <item name="coordinatorLayoutStyle">@style/Widget.Support.CoordinatorLayout</item>
         <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
     </style>
 
-    <style name="AboutLight" parent="NoActionBar.LightColors">
+    <style name="About" parent="NoActionBar.LightColors">
         <item name="actionBarSize">45dp</item>
         <item name="android:textViewStyle">@style/AboutTextViews</item>
-        <item name="android:windowBackground">?attr/primaryColor</item>
+        <item name="android:windowBackground">@color/light_orange</item>
+    </style>
+
+    <style name="Toolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/premfina_gray</item>
+        <item name="android:textColorSecondary">@color/premfina_gray</item>
+        <item name="actionMenuTextColor">@color/premfina_gray</item>
+        <item name="android:background">?attr/colorPrimary</item>
     </style>
 
     <style name="Buttons" parent="Widget.AppCompat.Button">
-        <item name="android:background">?attr/primaryColor</item>
+        <item name="android:background">@drawable/button_background</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
     <style name="CardViews" parent="CardView">
-        <item name="cardCornerRadius">20dp</item>
+        <item name="cardCornerRadius">0dp</item>
         <item name="android:innerRadius">0dp</item>
         <item name="android:shape">ring</item>
         <item name="android:thicknessRatio">1.9</item>
@@ -74,12 +93,18 @@
     </style>
 
     <style name="TextViews" parent="Widget.AppCompat.EditText">
-        <item name="android:textColor">?attr/primaryTextColor</item>
+        <item name="android:textColor">@color/fontColor</item>
         <item name="android:background">@null</item>
     </style>
 
+    <style name="TextViews.Hyperlink">
+        <item name="android:textColor">@color/fontColor</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
     <style name="AboutTextViews" parent="Widget.AppCompat.EditText">
-        <item name="android:textColor">?attr/primaryTextColor</item>
+        <!--item name="android:textColor">@color/premfina_gray</item-->
+        <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:background">@null</item>
     </style>
 
@@ -102,4 +127,8 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="NoActionBar.LightColors.AppTheme.Launcher.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="NoActionBar.LightColors.AppTheme.Launcher.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
