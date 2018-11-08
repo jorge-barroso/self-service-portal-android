@@ -7,9 +7,9 @@
         android:summary="@string/use_external_browser_desc"
         android:title="@string/use_external_browser_main" />
     <!--ListPreference
-        android:defaultValue="1"
-        android:entries="@array/night_mode_opts"
-        android:entryValues="@array/night_mode_values"
-        android:key="night_mode_preference"
-        android:title="@string/night_mode" /-->
+        android:defaultValue="0"
+        android:entries="@array/background_settings"
+        android:entryValues="@array/background_names"
+        android:key="backgroundImage"
+        android:title="@string/app_background" /-->
 </PreferenceScreen>

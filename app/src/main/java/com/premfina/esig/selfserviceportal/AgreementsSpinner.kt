@@ -10,15 +10,14 @@ import android.widget.Spinner
 import com.premfina.esig.selfserviceportal.CustomRecyclerAdapter
 import com.premfina.selfservice.dto.AgreementDto
 import com.premfina.selfservice.dto.DocumentDto
-import com.premfina.selfservice.dto.UserDto
 
-class AgreementsSpinner(ctx: Context, userDto: UserDto, spinner: Spinner, docView: RecyclerView? = null) {
+class AgreementsSpinner(ctx: Context, agreementDtos: Array<AgreementDto>, spinner: Spinner, docView: RecyclerView? = null) {
     lateinit var currentAgreement: AgreementDto
 
     init {
-        val agreements = ArrayList<String>(userDto.agreementDtos.size)
+        val agreements = ArrayList<String>(agreementDtos.size)
         val allData = HashMap<String, AgreementDto>(agreements.size)
-        userDto.agreementDtos.filter { agreement -> agreement != null }.map { agreement ->
+        agreementDtos.map { agreement ->
             agreements.add(agreement.agreementNumber)
             allData += (agreement.agreementNumber to agreement)
         }

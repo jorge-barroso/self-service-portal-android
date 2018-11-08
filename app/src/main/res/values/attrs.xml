@@ -7,5 +7,10 @@
         <attr name="middleColor" format="color"/>
         <attr name="secondaryTextColor" format="color"/>
         <attr name="backgroundCardColor" format="color"/>
+        <attr name="backgroundImage">
+            <enum name="orange_apple" value="0">@mipmap/orange_apple</enum>
+            <enum name="coffee_mug" value="1">@mipmap/coffee</enum>
+            <enum name="cream" value="2">@color/premfina_cream</enum>
+        </attr>
     </declare-styleable>
 </resources>

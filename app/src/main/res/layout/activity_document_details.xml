@@ -44,10 +44,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="72dp"
+            android:layout_marginTop="50dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
             app:contentPadding="20dp"
             app:contentPaddingTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -162,11 +160,10 @@
                     android:id="@+id/live_date"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:text="TextView"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/maturity_date_label" />
+                    app:layout_constraintTop_toTopOf="@+id/live_date_label" />
 
                 <TextView
                     android:id="@+id/next_due_date_label"
@@ -261,42 +258,21 @@
             </android.support.constraint.ConstraintLayout>
         </android.support.v7.widget.CardView>
 
-        <ImageButton
-            android:id="@+id/view_agreement"
-            android:layout_width="wrap_content"
-            android:layout_height="46dp"
+        <Button
+            android:id="@+id/go_to_documents_actions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="@color/colorPrimary"
-            android:onClick="viewAgreement"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:onClick="goToDocumentsActions"
+            android:text="@string/my_documents"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/cardView"
-            app:layout_constraintTop_toBottomOf="@+id/cardView"
-            app:srcCompat="@drawable/ic_insert_drive_file_white_24dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
-        <ImageButton
-            android:id="@+id/download_documents"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:backgroundTint="@color/colorPrimary"
-            android:onClick="downloadAgreement"
-            app:layout_constraintEnd_toStartOf="@+id/email_documents"
-            app:layout_constraintStart_toEndOf="@+id/view_agreement"
-            app:layout_constraintTop_toTopOf="@+id/view_agreement"
-            app:srcCompat="@drawable/ic_file_download_white_24dp" />
-
-        <ImageButton
-            android:id="@+id/email_documents"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:backgroundTint="@color/colorPrimary"
-            android:onClick="emailAgreement"
-            app:layout_constraintEnd_toEndOf="@+id/cardView"
-            app:layout_constraintTop_toTopOf="@+id/download_documents"
-            app:srcCompat="@drawable/ic_email_white_24dp" />
 
     </android.support.constraint.ConstraintLayout>
 

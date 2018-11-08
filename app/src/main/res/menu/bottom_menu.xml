@@ -16,4 +16,5 @@
         android:id="@+id/agreements_bottom"
         android:icon="@drawable/ic_insert_drive_file_white_24dp"
         android:title="@string/agreements" />
+
 </menu>

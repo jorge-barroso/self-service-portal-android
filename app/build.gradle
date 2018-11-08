@@ -52,5 +52,7 @@ dependencies {
     implementation "com.premfina.selfservice:self-service-dto:1.2.2"
     implementation group: 'com.github.lecho', name: 'hellocharts-library', version: '1.5.8'
     implementation group: 'uk.co.chrisjenx', name: 'calligraphy', version: '2.3.0'
+    implementation group: 'org.jetbrains.anko', name: 'anko-commons', version: '0.10.7'
+
 
 }

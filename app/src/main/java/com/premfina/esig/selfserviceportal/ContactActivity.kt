@@ -2,6 +2,8 @@ package com.premfina.esig.selfserviceportal
 
 import android.os.Bundle
 import android.preference.PreferenceManager
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.View
 import android.widget.Toast
 import com.android.volley.Request
@@ -10,29 +12,45 @@ import com.android.volley.toolbox.Volley
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
 import com.premfina.esig.selfserviceportal.com.premfina.esig.selfserviceportal.AgreementsSpinner
+import com.premfina.selfservice.dto.AgreementDto
 import com.premfina.selfservice.dto.CustomerQueryDto
 import com.premfina.selfservice.dto.UserDto
 import kotlinx.android.synthetic.main.activity_contact.*
+import kotlinx.android.synthetic.main.app_bar_drawer.*
 
 class ContactActivity : Drawer() {
 
     private var mainScreen = true
     private lateinit var spinner: AgreementsSpinner
     private lateinit var userDto: UserDto
+    private var includesAgreement = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         addToFrame(R.layout.activity_contact)
 
-        userDto = jacksonObjectMapper().readValue<UserDto>(userPreferences.getString("userDto", "")!!)
+        bottom_menu.menu.setGroupCheckable(0, false, true)
+
+        userDto = jacksonObjectMapper().readValue(userPreferences.getString("userDto", "")!!)
+        val agreementDtos = jacksonObjectMapper().readValue<Array<AgreementDto>>(agreementsDetails.getString("agreements", "")!!)
 
         user_email_view.text = userDto.email
 
-        spinner = AgreementsSpinner(this, userDto, spinner2)
+        spinner = AgreementsSpinner(this, agreementDtos, spinner2)
+
+        submit_button.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable?) {}
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                submit_button.isEnabled = (subject.text?.isBlank() ?: true || query.text?.isBlank() ?: true || (!includesAgreement))
+            }
+        })
     }
 
     fun yesClicked(view: View)
     {
         buttonPressed()
+        includesAgreement = true
         ageement_numbers_label.visibility = View.VISIBLE
         agreement_numbers_view.visibility = View.VISIBLE
     }
@@ -40,6 +58,7 @@ class ContactActivity : Drawer() {
     fun noClicked(view: View)
     {
         buttonPressed()
+        includesAgreement = false
         ageement_numbers_label.visibility = View.GONE
         agreement_numbers_view.visibility = View.GONE
     }
@@ -83,7 +102,7 @@ class ContactActivity : Drawer() {
 
         val requestQueue = Volley.newRequestQueue(this)
 
-        val request = AuthRequest(url, Request.Method.POST, newUserDto,
+        val request = StringAuthRequest(url, Request.Method.POST, newUserDto,
                 Response.Listener {
                     Toast.makeText(this, getString(R.string.emailed_successful), Toast.LENGTH_LONG).show()
                     onBackPressed()

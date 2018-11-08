@@ -10,4 +10,15 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+
+    <string-array name="background_settings">
+        <item>orange_apple</item>
+        <item>coffee_mug</item>
+        <item>cream</item>
+    </string-array>
+    <string-array name="background_names">
+        <item>@string/orange_apple</item>
+        <item>@string/coffee_mug</item>
+        <item>@string/cream</item>
+    </string-array>
 </resources>

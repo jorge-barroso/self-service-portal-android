@@ -19,7 +19,7 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name"
-            android:windowSoftInputMode="stateHidden" />
+            android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".RegistrationActivity"
             android:label="@string/registration" />
@@ -27,7 +27,7 @@
             android:name=".Drawer"
             android:theme="@style/Main.NoBackground" />
         <activity
-            android:name=".MainActivity"
+            android:name=".DashboardActivity"
             android:label="@string/home" />
         <activity
             android:name=".ContactActivity"
@@ -54,13 +54,33 @@
         </activity>
         <activity android:name=".ForgottenPasswordActivity" />
         <activity
-            android:name=".ViewAgreementsActivity"
+            android:name=".AgreementsDetailsActivity"
             android:label="@string/title_activity_view_agreements"
             android:parentActivityName=".Drawer"
             android:theme="@style/NoActionBar.LightColors.AppTheme.Launcher">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.premfina.esig.selfserviceportal.Drawer" />
+        </activity>
+        <activity
+            android:name=".DocumentActions"
+            android:label="@string/my_documents" />
+        <activity android:name=".ConfirmRegistrationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="*.premfina.com"
+                    android:pathPrefix="/confirm/registration/"
+                    android:scheme="https" />
+                <data
+                    android:host="*.premfina.com"
+                    android:pathPrefix="/confirm/registration/"
+                    android:scheme="http" />
+            </intent-filter>
         </activity>
     </application>
 

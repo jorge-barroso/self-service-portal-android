@@ -9,6 +9,7 @@ import android.view.View
 import com.premfina.esig.selfserviceportal.com.premfina.esig.selfserviceportal.AppPackages
 import com.premfina.esig.selfserviceportal.com.premfina.esig.selfserviceportal.AppsUri
 import kotlinx.android.synthetic.main.activity_about.*
+import kotlinx.android.synthetic.main.app_bar_drawer.*
 
 class AboutActivity : Drawer() {
 
@@ -18,6 +19,8 @@ class AboutActivity : Drawer() {
         super.onCreate(savedInstanceState)
         setTheme(R.style.About)
         addToFrame(R.layout.activity_about)
+
+        bottom_menu.menu.setGroupCheckable(0, false, true)
 
         brokerPreferences = getSharedPreferences("Broker", Context.MODE_PRIVATE)
         fca_note.text = brokerPreferences.getString("fca_note", fca_note.text.toString())

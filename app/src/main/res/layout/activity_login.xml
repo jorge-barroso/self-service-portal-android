@@ -29,30 +29,34 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <android.support.v7.widget.CardView
-            android:id="@+id/reg_success_card"
-            android:layout_width="wrap_content"
+            android:id="@+id/message_card"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
             android:visibility="gone"
             app:layout_constraintBottom_toTopOf="@+id/email_card"
             app:layout_constraintEnd_toEndOf="@+id/email_card"
-            app:layout_constraintStart_toStartOf="@+id/email_card">
+            app:layout_constraintStart_toStartOf="@+id/email_card"
+            app:layout_constraintTop_toBottomOf="@+id/include">
 
             <android.support.constraint.ConstraintLayout
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:layout_editor_absoluteX="42dp"
                 tools:layout_editor_absoluteY="222dp">
 
                 <TextView
-                    android:id="@+id/reg_success"
+                    android:id="@+id/message_text"
                     android:layout_width="217dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    android:text="@string/reg_success"
+                    android:layout_marginBottom="8dp"
+                    android:text="TextView"
                     android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -65,7 +69,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="64dp"
+            android:layout_marginTop="72dp"
             android:layout_marginEnd="8dp"
             app:contentPaddingBottom="0dp"
             app:contentPaddingTop="0dp"
@@ -92,7 +96,7 @@
             android:id="@+id/password_card"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
             app:layout_constraintEnd_toEndOf="@+id/email_card"
             app:layout_constraintStart_toStartOf="@+id/email_card"
             app:layout_constraintTop_toBottomOf="@+id/email_card">
@@ -107,7 +111,6 @@
                     android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="-1dp"
                     android:autofillHints="AUTOFILL_HINT_PASSWORD"
                     android:hint="@string/password"
                     android:inputType="textPassword" />
@@ -119,11 +122,10 @@
             android:id="@+id/login_submit_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
+            android:layout_marginTop="16dp"
             android:enabled="false"
             android:onClick="submitLogin"
             android:text="@string/login"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/password_card"
             app:layout_constraintStart_toStartOf="@+id/password_card"
             app:layout_constraintTop_toBottomOf="@+id/password_card" />

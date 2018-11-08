@@ -11,14 +11,18 @@ import android.view.ViewGroup
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
 import com.premfina.selfservice.dto.AgreementDto
-import com.premfina.selfservice.dto.UserDto
 import kotlinx.android.synthetic.main.activity_view_agreements.*
+import kotlinx.android.synthetic.main.app_bar_drawer.*
 import kotlinx.android.synthetic.main.fragment_view_agreements.view.*
+import lecho.lib.hellocharts.model.PieChartData
+import lecho.lib.hellocharts.model.SliceValue
+import org.jetbrains.anko.doAsync
+import org.jetbrains.anko.uiThread
 import org.jetbrains.annotations.NotNull
 import java.text.NumberFormat
 import java.text.SimpleDateFormat
 
-class ViewAgreementsActivity : Drawer() {
+class AgreementsDetailsActivity : Drawer() {
 
     /**
      * The [android.support.v4.view.PagerAdapter] that will provide
@@ -30,19 +34,33 @@ class ViewAgreementsActivity : Drawer() {
      */
     private var mSectionsPagerAdapter: SectionsPagerAdapter? = null
     private lateinit var agreementDtos: Array<AgreementDto>
+    private var pos: Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         addToFrame(layoutResID = R.layout.activity_view_agreements)
 
-        //initialize array of agreements
-        agreementDtos = jacksonObjectMapper().readValue<UserDto>(userPreferences.getString("userDto", "")!!).agreementDtos
+        bottom_menu.menu.setGroupCheckable(0, true, true)
 
-        // Create the adapter that will return a fragment for each of the three
-        // primary sections of the activity.
-        mSectionsPagerAdapter = SectionsPagerAdapter(supportFragmentManager)
+        bottom_menu.selectedItemId = R.id.agreements_bottom
 
-        // Set up the ViewPager with the sections adapter.
-        container.adapter = mSectionsPagerAdapter
+        progressBar2.indeterminateDrawable.setColorFilter(getColor(R.color.colorPrimary), android.graphics.PorterDuff.Mode.MULTIPLY)
+
+        doAsync {
+            //initialize array of agreements
+            agreementDtos = jacksonObjectMapper().readValue(agreementsDetails.getString("agreements", "")!!)
+
+            // Create the adapter that will return a fragment for each of the three
+            // primary sections of the activity.
+            mSectionsPagerAdapter = SectionsPagerAdapter(supportFragmentManager)
+
+            // Set up the ViewPager with the sections adapter.
+            view_pager.adapter = mSectionsPagerAdapter
+
+            uiThread {
+                progressBar2.visibility = View.GONE
+            }
+        }
     }
 
     /**
@@ -59,7 +77,7 @@ class ViewAgreementsActivity : Drawer() {
         }
 
         override fun getCount(): Int {
-            // Show 3 total pages.
+            // Show as many pages as agreements.
             return agreementDtos.size
         }
     }
@@ -70,7 +88,7 @@ class ViewAgreementsActivity : Drawer() {
     class PlaceholderFragment : Fragment() {
 
         private val numberFormat = NumberFormat.getCurrencyInstance()
-        private val df = SimpleDateFormat.getInstance()
+        private val df = SimpleDateFormat.getDateInstance()
         override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                                   savedInstanceState: Bundle?): View? {
             val rootView = inflater.inflate(R.layout.fragment_view_agreements, container, false)
@@ -81,12 +99,32 @@ class ViewAgreementsActivity : Drawer() {
             rootView.monthly_amount.text = numberFormat.format(agreementDto.monthlyAmount)
             rootView.next_due_date.text = df.format(agreementDto.nextDueDate)
             rootView.status.text = agreementDto.agreementStatus
-            rootView.setOnClickListener {
+            rootView.agreement_data_card.setOnClickListener {
                 val intent = Intent(context, DocumentDetailsActivity::class.java)
                 intent.putExtra(AGREEMENT, agreementDtoString)
+                        .putExtra("element_id", R.id.agreements_bottom)
                 startActivity(intent)
             }
+            rootView.agrview_agreement_number.text = agreementDto.agreementNumber
+            val cleared = agreementDto.clearedBalance.toFloat()
+            val toPay = (agreementDto.totalAmount - cleared).toFloat()
+            generatePieChart(rootView, cleared, toPay)
             return rootView
+        }
+
+
+        private fun generatePieChart(rootView: View, cleared: Float, toPay: Float) {
+            val paidValue = SliceValue(cleared, activity!!.getColor(R.color.colorPrimary)).setLabel(activity!!.getString(R.string.paid))
+            val toPayValue = SliceValue(toPay - cleared, activity!!.getColor(R.color.colorAccent)).setLabel(activity!!.getString(R.string.to_pay))
+            val values = listOf<SliceValue>(paidValue, toPayValue)
+            val data = PieChartData(values)
+            data.setHasLabels(true)
+                    .setHasLabelsOutside(true)
+                    .slicesSpacing = 7
+
+            rootView.pie_chart.circleFillRatio = 0.75f
+
+            rootView.pie_chart.pieChartData = data
         }
 
         companion object {

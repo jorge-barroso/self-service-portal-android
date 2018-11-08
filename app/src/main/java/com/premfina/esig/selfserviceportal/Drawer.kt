@@ -1,33 +1,40 @@
 package com.premfina.esig.selfserviceportal
 
+import android.Manifest
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
-import android.net.Uri
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.support.design.widget.NavigationView
+import android.support.v4.app.ActivityCompat
+import android.support.v4.content.ContextCompat
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
-import android.support.v7.preference.PreferenceManager
-import android.util.Log
 import android.view.*
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_drawer.*
 import kotlinx.android.synthetic.main.app_bar_drawer.*
-import kotlinx.android.synthetic.main.app_bar_drawer.view.*
 import kotlinx.android.synthetic.main.content_drawer.*
+import org.jetbrains.anko.clearTask
+import org.jetbrains.anko.intentFor
+import org.jetbrains.anko.makeCall
+import org.jetbrains.anko.newTask
+import org.jetbrains.annotations.NotNull
 
 
 open class Drawer : MyBaseApplication(), NavigationView.OnNavigationItemSelectedListener {
 
-    protected lateinit var sharedPreferences: SharedPreferences
     protected lateinit var userPreferences: SharedPreferences
+    protected lateinit var agreementsDetails: SharedPreferences
     protected lateinit var brokerPreferences: SharedPreferences
+    private lateinit var number: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drawer)
 
-        val currentItemId = intent.getIntExtra("element_id", R.id.dashboard_bottom)
+        val currentItemId = intent.getIntExtra("element_id", 0)
 
         bottom_menu.selectedItemId = currentItemId
 
@@ -37,30 +44,27 @@ open class Drawer : MyBaseApplication(), NavigationView.OnNavigationItemSelected
                     false
                 }
                 R.id.agreements_bottom -> {
-                    Log.i(localClassName, "Agreements button clicked")
-                    val intent = Intent(this, ViewAgreementsActivity::class.java)
-                    intent.putExtra("element_id", it.itemId)
-                    startActivity(intent)
+                    toActivity<AgreementsDetailsActivity>(it.itemId)
                     true
                 }
                 R.id.dashboard_bottom -> {
-                    Log.i(localClassName, "Dashboard button clicked")
-                    val intent = Intent(this, MainActivity::class.java)
-                    intent.putExtra("element_id", it.itemId)
-                    startActivity(intent)
+                    toActivity<DashboardActivity>(it.itemId)
                     true
                 }
                 R.id.back_bottom -> {
-                    Log.i(localClassName, "Back button clicked")
+                    if (!isTaskRoot)
+                        super.onBackPressed()
                     true
                 }
                 else -> false
             }
         }
 
-        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
         userPreferences = getSharedPreferences("User", Context.MODE_PRIVATE)
+        agreementsDetails = getSharedPreferences("Agreements", Context.MODE_PRIVATE)
         brokerPreferences = getSharedPreferences("Broker", Context.MODE_PRIVATE)
+
+        number = brokerPreferences.getString("phone", "")!!
 
         if (!userPreferences.contains("username"))
         {
@@ -68,9 +72,8 @@ open class Drawer : MyBaseApplication(), NavigationView.OnNavigationItemSelected
             finish()
         }
 
-        toolbar.label_text.text = userPreferences.getString("username", "")
         setSupportActionBar(toolbar)
-        supportActionBar?.setDisplayShowTitleEnabled(false)
+        supportActionBar?.setDisplayShowTitleEnabled(true)
 
 
         val toggle = ActionBarDrawerToggle(this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
@@ -122,7 +125,7 @@ open class Drawer : MyBaseApplication(), NavigationView.OnNavigationItemSelected
         // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.nav_home -> {
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, DashboardActivity::class.java))
                 finish()
             }
             R.id.nav_contact -> {
@@ -130,9 +133,10 @@ open class Drawer : MyBaseApplication(), NavigationView.OnNavigationItemSelected
             }
             R.id.nav_call -> {
                 item.isChecked = false
-                val intent = Intent(Intent.ACTION_DIAL)
-                intent.data = Uri.parse("tel:" + brokerPreferences.getString("phone", ""))
-                startActivity(intent)
+                if (ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED)
+                    ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.CALL_PHONE), PermissionsRequests.PHONE_CALL_REQUEST)
+                else
+                    makeCall(number)
             }
             R.id.nav_settings -> {
                 startActivity(Intent(this, SettingsActivity::class.java))
@@ -141,10 +145,8 @@ open class Drawer : MyBaseApplication(), NavigationView.OnNavigationItemSelected
                 startActivity(Intent(this, AboutActivity::class.java))
             }
             R.id.nav_logout -> {
-                sharedPreferences.edit().clear().apply()
                 userPreferences.edit().clear().apply()
-                startActivity(Intent(this, LoginActivity::class.java))
-                finish()
+                startActivity(intentFor<LoginActivity>().newTask().clearTask())
             }
         }
 
@@ -172,5 +174,19 @@ open class Drawer : MyBaseApplication(), NavigationView.OnNavigationItemSelected
             val nestedView = inflater.inflate(layoutResID, frame_layout, false)
             frame_layout.addView(nestedView, layoutParams)
         }
+    }
+
+
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+        when (requestCode) {
+            PermissionsRequests.PHONE_CALL_REQUEST -> {
+                if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED)
+                    makeCall(number)
+            }
+        }
+    }
+
+    private inline fun <reified T : Activity> toActivity(@NotNull elementId: Int) {
+        startActivity(intentFor<T>("element_id" to elementId))
     }
 }
